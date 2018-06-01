@@ -1,5 +1,5 @@
 ### Strawberry Template for Mastodon
-Copyright (c) 2018 By Shioko@cmx.im
+Copyright (c) 2018 By [Shioko@cmx.im](https://cmx.im/@shioko)
 
 **License**: [Creative Commons Attribution 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
