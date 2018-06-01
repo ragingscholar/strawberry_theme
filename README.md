@@ -7,7 +7,7 @@ Copyright (c) 2018 By Shioko@cmx.im
 
 Strawberry theme for [Mastodon](https://github.com/tootsuite/mastodon).
 
-It's created by Shioko@cmx.im for cmx.im instance, you can install it on your instance, or use it via stylish.
+It's created by [Shioko@cmx.im](https://cmx.im/@shioko) for cmx.im instance, you can install it on your instance, or use it via stylish.
 
 ## Install
 ### For instance admin
@@ -26,4 +26,4 @@ If your instance does not have this theme installed, you can install it locally 
 2. Retweet buttons are not displayed properly when using firefox.
 
 ## Bug report
-`shioko@cmx.im` or `haisenberg@cmx.im`
+[shioko@cmx.im](https://cmx.im/@shioko) or [haisenberg@cmx.im](https://cmx.im/@haisenberg)
