@@ -21,5 +21,9 @@ It's created by Shioko@cmx.im for cmx.im instance, you can install it on your in
 ### For users
 If your instance does not have this theme installed, you can install it locally with [stylish](https://userstyles.org/styles/160753/mastodon).
 
+## Known Issue
+1. Some of the styles affect preferences page, you may find some undesirable font colors.
+2. Retweet buttons are not displayed properly when using firefox.
+
 ## Bug report
 `shioko@cmx.im` or `haisenberg@cmx.im`
