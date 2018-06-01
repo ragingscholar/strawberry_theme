@@ -1,10 +1,12 @@
 ### Strawberry Template for Mastodon
 Copyright (c) 2018 By Shioko@cmx.im
+
 **License**: [Creative Commons Attribution 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-![Screenshot of the strawberry template](screenshoot.png)
+![Screenshot of the strawberry template](screenshot.png)
 
 Strawberry theme for [Mastodon](https://github.com/tootsuite/mastodon).
+
 It's created by Shioko@cmx.im for cmx.im instance, you can install it on your instance, or use it via stylish.
 
 ## Install
