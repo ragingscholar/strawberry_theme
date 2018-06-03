@@ -225,6 +225,11 @@ button.icon-button.disabled i.fa-retweet {
 .status-card {background: var(--btt);border: 1px solid var(--cui); border-radius: 10px; color: var(--cui);}
 .status-card__content:hover {background: var(--btt2);}
 .status-card__title {color: var(--curl)}
+.status-card__description {color: var(--ctxt)}
+
+/*草莓象图片渐变*/
+.drawer__inner__mastodon>img {display:none;}
+.drawer__inner__mastodon {background: linear-gradient(to bottom, rgba(170, 48, 41,1), rgba(170, 48, 41,0), rgba(170, 48, 41,0)),url(/strawberry/elephant.png) no-repeat bottom/100% auto;}
 
 /*加载动画*/
 .loading-indicator { color: var(--btt2)}
