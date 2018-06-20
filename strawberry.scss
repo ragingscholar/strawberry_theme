@@ -2,7 +2,6 @@
 
 /*by Shioko@cmx.im*/
 /*BY-NC-SA 编辑时请保留注释~*/
-/*使用代码美化功能可能会导致不可预料的错误(╯‵□′)╯︵┻━┻*/
 
 :root {				/*在此输入自定义颜色*/
 	--bpg: rgb(250,153,134);	/*页面背景*/
@@ -20,199 +19,567 @@
 }
 
 /*页面背景*/
-.columns-area {background-color: var(--bpg)}
-.loading-bar {background-color:var(--bhd)}
+.columns-area {
+	background-color: var(--bpg);
+}
+.loading-bar {
+	background-color:var(--bhd);
+}
 
 /*手机端*/
-.ui {background-color: var(--bpg)}
+.ui {
+	background-color: var(--bpg)
+}
 
 /*手机端发送按钮*/
-.floating-action-button {background: var(--cbut); color: var(--btt2);}
-.floating-action-button:active,.floating-action-button:focus,.floating-action-button:hover {background:var(--curl)}
+.floating-action-button {
+	background: var(--cbut);
+	color: var(--btt2);
+}
+.floating-action-button:active,
+.floating-action-button:focus,
+.floating-action-button:hover {
+	background:var(--curl)
+}
 
 /*全局文字按钮*/
-body {color: var(--ctxt)}
-.icon-button {color: var(--cui);text-shadow: 1px 1px 1px var(--bhd);}
-.icon-button:active,.icon-button:focus,.icon-button:hover {color:var(--cbut);}
-.icon-button.disabled {color: var(--cui2)}
+body {
+	color: var(--ctxt)
+}
+.icon-button {
+	color: rgba(225,130,125,.6);
+	text-shadow: 1px 1px 1px var(--btt);
+}
+.icon-button:active,
+.icon-button:focus,
+.icon-button:hover {
+	color:var(--cbut);
+}
+.icon-button.disabled {color: var(--cui2);
+}
 
 /*导航栏*/
-.drawer__header {background: var(--bhd);border-radius:10px}
-.drawer__header a:hover {background: var(--blb);border-radius:10px}
-.drawer__tab {color: var(--cui)}
+.drawer__header {
+	background: var(--bhd);border-radius:10px;
+}
+.drawer__header a:hover {
+	background: var(--blb);
+	border-radius:10px;
+}
+.drawer__tab {
+	color: var(--cui);
+}
 /*手机导航栏*/
-.tabs-bar {background: var(--bhd);border-radius:10px}
-.tabs-bar__link {color: var(--cui);border-bottom: 0}
-.tabs-bar__link.active {border-bottom:2px solid var(--cbut); color:var(--cbut)}
+.tabs-bar {
+	background: var(--bhd);
+	border-radius:10px;
+}
+.tabs-bar__link {color: var(--cui);
+	border-bottom: 0;
+}
+.tabs-bar__link.active {
+	border-bottom:2px solid var(--cbut);
+	color:var(--cbut);
+}
 
 /*滚动栏*/
-::-webkit-scrollbar-thumb {background: var(--cui); border-radius:50px}
-::-webkit-scrollbar-thumb:hover {background: var(--cbut)}
-::-webkit-scrollbar-thumb:active {background: var(--cui2)}
-::-webkit-scrollbar-track {border:0 none #fff; border-radius:0; background:rgba(249,235,221,.7) !important}
-::-webkit-scrollbar-track:active, ::-webkit-scrollbar-track:hover {background:var(--bhd)}
-::-webkit-scrollbar-corner {background:transparent}
-.column ::-webkit-scrollbar-track {border-radius:0 0 10px 0;}
-.drawer__pager ::-webkit-scrollbar-track {border-radius:0 10px 10px 0;}
+::-webkit-scrollbar-thumb {
+	background: var(--cui);
+	border-radius:50px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--cbut);
+}
+::-webkit-scrollbar-thumb:active {
+	background: var(--cui2);
+}
+::-webkit-scrollbar-track {
+	border:0 none #fff;
+	border-radius:0;
+	background:rgba(249,235,221,.7) !important;
+}
+::-webkit-scrollbar-track:active,
+::-webkit-scrollbar-track:hover {
+	background:var(--bhd);
+}
+::-webkit-scrollbar-corner {
+	background:transparent;
+}
+.column ::-webkit-scrollbar-track {
+	border-radius:0 0 10px 0;
+}
+.drawer__pager ::-webkit-scrollbar-track {
+	border-radius:0 10px 10px 0;
+}
 
 /*搜索栏*/
-.search__input {background: var(--btt); color: var(--cui);border-radius:10px}
-.search__input:focus {background: var(--btt2);}
-.search__icon .fa, .search__icon .fa-search, .search__icon .fa-times-circle{color: var(--cui)}
+.search__input {
+	background: var(--btt);
+	color: var(--cui);
+	border-radius:10px
+}
+.search__input:focus {
+	background: var(--btt2);
+}
+.search__icon .fa,
+.search__icon .fa-search,
+.search__icon .fa-times-circle{
+	color: var(--cui)
+}
+.search__icon .fa-times-circle:hover {
+	color: var(--cbut)
+}
 
 /*发送栏*/
-.drawer__inner, .drawer__inner__mastodon {background: var(--btxt);border-radius:10px}
+.drawer__inner,
 .drawer__inner__mastodon {
-    background: var(--btxt) url('/strawberry/elephant.png') no-repeat bottom / 100% auto;
-
-    > img {
-        display: none;
-    }
+	background: var(--btxt);
+	border-radius:10px
 }
-.navigation-bar strong, .reply-indicator__content {color: var(--bhd);}
-.navigation-bar a {color: var(--curl);}
-.button.button--block {background-color: var(--cbut);}
+.navigation-bar strong,
+.reply-indicator__content {
+	color: var(--bhd);
+}
+.navigation-bar a {
+	color: var(--curl);
+}
+.button.button--block {
+	background-color: var(--cbut);
+}
+.button.button--block:hover {
+	background-color: var(--curl);
+}
 
 /*回复框*/
-.reply-indicator {background: var(--cui);}
-.display-name, .display-name__account {color: var(--btxt);}
-.reply-indicator__content a {color: var(--btt2);}
+.reply-indicator {
+	background: var(--cui);
+}
+.display-name,
+.display-name__account {
+	color: var(--btxt);
+}
+.reply-indicator__content a {
+	color: var(--btt2);}
 
 /*私信提示*/
-.compose-form .compose-form__warning {color: var(--btxt);background: var(--bhd);}
-.compose-form .compose-form__warning a {color: var(--cui);}
+.compose-form .compose-form__warning {
+	color: var(--btxt);
+	background: var(--bhd);
+}
+.compose-form .compose-form__warning a {
+	color: var(--cui);
+}
 
 /*发送框*/
-.compose-form .compose-form__buttons-wrapper {background: var(--bhd);}
-.compose-form  {background:transparent;}
+.compose-form .compose-form__buttons-wrapper {
+	background: var(--bhd);
+}
+.compose-form {
+	background:transparent;
+}
 
 /*TL标题*/
-.column-header, .column-header__button, .column-back-button,.column-header__button.active, .column-header__button.active:hover, .column-header__back-button {background: var(--bhd); color: var(--cbut);border-radius:10px 10px 0 0;}
-.column-header__button.active, .column-header__button.active:hover {color: var(--btt2);text-shadow: 0 0 0.6em var(--btxt)}
-.column-header,.column-back-button {box-shadow: 0 8px 20px -8px var(--cui);}
-.column-header__collapsible-inner, .column-header__collapsible {background: var(--btt2); color: var(--cui);}
+.column-header,
+.column-header__button,
+.column-back-button,
+.column-header__button.active,
+.column-header__button.active:hover,
+.column-header__back-button {
+	background: var(--bhd);
+	color: var(--cbut);
+	border-radius:10px 10px 0 0;
+}
+.column-header__button.active,
+.column-header__button.active:hover {
+	color: var(--btt2);
+	text-shadow: 0 0 0.6em var(--btxt);
+}
+.column-header,.column-back-button {
+	box-shadow: 0 8px 20px -8px var(--cui);
+}
+.column-header__collapsible-inner,
+.column-header__collapsible {
+	background: var(--btt2);
+	color: var(--cui);
+}
 /*新消息提示*/
-.column-header.active .column-header__icon{color: var(--btt2);text-shadow: 0 0 10px rgba(255,255,255,.4) !important}
-.column-header.active{box-shadow: 0 2px 10px rgba(255,255,255,.5) !important}
+.column-header.active .column-header__icon{
+	color: var(--btt2);
+	text-shadow: 0 0 10px rgba(255,255,255,.4) !important
+}
+.column-header.active{
+	box-shadow: 0 2px 10px rgba(255,255,255,.5) !important
+}
 
 /*TL正文*/
-.column .scrollable {background: var(--btt);border-radius:0 0 10px 10px;}
-.detailed-status, .status.status-direct, .detailed-status__action-bar {background: var(--btt3);}
-.detailed-status__action-bar {border-top: 1px solid var(--cui); border-bottom: 1px solid var(--cui);}
-.status {border-bottom: 1px solid var(--cui);box-shadow: 0 5px 20px -8px var(--cui);}
-.account__display-name strong, .status__display-name strong, .detailed-status__display-name strong {color: var(--btxt);text-shadow: 0 0 0.2em var(--btt2)}
-.status__content a, .status__prepend .status__display-name strong {color: var(--curl)}
-.display-name__account {color: var(--cui);}
-.detailed-status__meta {color: var(--cui);}
-.focusable:focus,.focusable:focus .status.status-direct,.focusable:focus .detailed-status,.focusable:focus .detailed-status__action-bar {background: var(--btt2);border-top: 1px solid var(--cui); border-bottom: 1px solid var(--cui);}
+.column .scrollable {
+	background: var(--btt);
+	border-radius:0 0 10px 10px;
+}
+.detailed-status,
+.status.status-direct,
+.detailed-status__action-bar {
+	background: var(--btt3);
+}
+.detailed-status__action-bar {
+	border-top: 1px solid var(--cui);
+	border-bottom: 1px solid var(--cui);
+}
+.status {
+	border-bottom: 1px solid var(--cui);
+	box-shadow: 0 5px 20px -8px var(--cui);
+}
+.account__display-name strong,
+.status__display-name strong,
+.detailed-status__display-name strong {
+	color: var(--btxt);
+	text-shadow: 0 0 0.2em var(--btt2)
+}
+.status__content a,
+.status__prepend .status__display-name strong {
+	color: var(--curl)
+}
+.display-name__account {
+	color: var(--cui);
+}
+.detailed-status__meta {
+	color: var(--cui);
+}
+.focusable:focus,
+.focusable:focus .status.status-direct,
+.focusable:focus .detailed-status,
+.focusable:focus .detailed-status__action-bar {
+	background: var(--btt2);
+	border-top: 1px solid var(--cui);
+	border-bottom: 1px solid var(--cui);
+}
 
 /*空白界面*/
-.empty-column-indicator, .error-column {background:var(--btt);color: var(--cui); border-radius:0 0 10px 10px}
-.regeneration-indicator {background: var(--btt);border-radius:0 0 10px 10px;color: var(--cui)}
-.regeneration-indicator__label strong {color: var(--curl);}
+.empty-column-indicator,
+.error-column {
+	background:var(--btt);
+	color: var(--cui);
+	border-radius:0 0 10px 10px;
+}
+.regeneration-indicator {
+	background: var(--btt);
+	border-radius:0 0 10px 10px;
+	color: var(--cui)
+}
+.regeneration-indicator__label strong {
+	color: var(--curl);
+}
 
 /*加载更多*/
-.load-gap {border-bottom: 1px solid var(--cui);}
-.load-more {color: var(--cui);}
-.load-more:hover {background:var(--btt2)}
+.load-gap {
+	border-bottom: 1px solid var(--cui);
+}
+.load-more {
+	color: var(--cui);
+}
+.load-more:hover {
+	background:var(--btt2)
+}
 
 /*头像*/
-.account__avatar {border-radius: 20px 20px 5px 20px; border: 3px outset var(--cbut);}
-.account__avatar {box-shadow: 0 0 0 1px var(--blb), 0 15px 25px -10px var(--cui);}
+.account__avatar {
+	border-radius: 20px 20px 5px 20px;
+	border: 3px outset var(--cbut);
+}
+.account__avatar {
+	box-shadow: 0 0 0 1px var(--blb), 0 15px 25px -10px var(--cui);
+}
 
 /*图文cw*/
-.media-spoiler {background: var(--blb);color: var(--ctxt)}
-.media-spoiler:active,.media-spoiler:focus,.media-spoiler:hover {color: var(--cbut)}
-.reply-indicator__content .status__content__spoiler-link, .status__content .status__content__spoiler-link {background: var(--cui);color: var(--btt2);}
-.reply-indicator__content .status__content__spoiler-link:hover, .status__content .status__content__spoiler-link:hover {background: var(--cbut);color: var(--btt2);}
-.icon-button.overlayed {background: rgba(235,230,232,.5);color: var(--cui)}
-.icon-button.overlayed:hover {background:rgba(239,199,179,.9);color: var(--cbut)}
-.video-player__spoiler {background: var(--blb);color: var(--ctxt)}
-.video-player__spoiler.active:active,.video-player__spoiler.active:focus,.video-player__spoiler.active:hover {color: var(--cbut)}
+.media-spoiler {
+	background: var(--blb);
+	color: var(--ctxt)
+}
+.media-spoiler:active,
+.media-spoiler:focus,
+.media-spoiler:hover {
+	color: var(--cbut)
+}
+.status__content__spoiler-link,
+.status__content .status__content__spoiler-link {
+	background: var(--cui);
+	color: var(--btt2);}
+.status__content__spoiler-link:hover,
+.status__content .status__content__spoiler-link:hover {
+	background: var(--cbut);
+	color: var(--btt2);
+}
+.icon-button.overlayed {
+	background: rgba(235,230,232,.5);
+	color: var(--cui)
+}
+.icon-button.overlayed:hover {
+	background:rgba(239,199,179,.9);
+	color: var(--cbut)
+}
+.video-player__spoiler {
+	background: var(--blb);
+	color: var(--ctxt)
+}
+.video-player__spoiler.active:active,
+.video-player__spoiler.active:focus,
+.video-player__spoiler.active:hover {
+	color: var(--cbut)
+}
 
 /*媒体标签*/
-.account__section-headline, .community-timeline__section-headline, .public-timeline__section-headline {background: var(--blb); border-bottom: 1px solid var(--cbut);}
-.account__section-headline a.active, .community-timeline__section-headline a.active, .public-timeline__section-headline a.active {color: var(--btt2);text-shadow: 0 0 0.6em var(--btxt)}
-.account__section-headline a, .community-timeline__section-headline a, .public-timeline__section-headline a {color: var(--btxt)}
+.account__section-headline,
+.community-timeline__section-headline,
+.public-timeline__section-headline {
+	background: var(--blb);
+	border-bottom: 1px solid var(--cbut);
+}
+.account__section-headline a.active,
+.community-timeline__section-headline a.active,
+.public-timeline__section-headline a.active {
+	color: var(--btt2);
+	text-shadow: 0 0 0.6em var(--btxt)
+}
+.account__section-headline a,
+.community-timeline__section-headline a,
+.public-timeline__section-headline a {
+	color: var(--btxt)
+}
 /*小三角*/
-.account__section-headline a.active:after, .account__section-headline a.active:before, .community-timeline__section-headline a.active:after, .community-timeline__section-headline a.active:before, .public-timeline__section-headline a.active:after, .public-timeline__section-headline a.active:before {bottom: 2;border-color: transparent transparent var(--cbut);}
-.account__section-headline a.active:after, .community-timeline__section-headline a.active:after, .public-timeline__section-headline a.active:after {border-color: transparent transparent var(--btt);}
+.account__section-headline a.active:after,
+.account__section-headline a.active:before,
+.community-timeline__section-headline a.active:after,
+.community-timeline__section-headline a.active:before,
+.public-timeline__section-headline a.active:after,
+.public-timeline__section-headline a.active:before {
+	border-color: transparent transparent var(--cbut);
+}
+.account__section-headline a.active:after,
+.community-timeline__section-headline a.active:after,
+.public-timeline__section-headline a.active:after {
+	border-color: transparent transparent var(--btt);
+}
 
 /*浏览器*/
-.column-header__back-button, .status__relative-time {color: var(--cbut)}
-.column-header>.column-header__back-button {color: var(--cbut)}
-.account__header>div {background: rgba(235,230,232,.6) !important}
-.account__header .account__header__display-name {color: var(--btt2);text-shadow: 0 0 0.4em #000}
-.account__header .account__header__username {color: var(--cbut);text-shadow: 1px 1px 0.5px #fff}
-.account__header .account__header__content {color: var(--ctxt);text-shadow: 1px 1px 0.5px #fff;}
-.account__action-bar{border-top: 1px solid var(--cui);border-bottom: 1px solid var(--cui);}
-.account__action-bar__tab{border-left: 1px solid var(--cui);}
-.account__action-bar__tab>span, .notification__message>span,.notification__message .fa,.status__prepend, .icon-button.active {color: var(--cui)}
-.account__action-bar__tab strong {color: var(--cbut)}
-.muted .status__content a, .muted .status__content p, .muted .status__display-name strong,.attachment-list.compact .fa {color: var(--cui2)}
-.attachment-list__list a {color: var(--cbut)}
-.column-header__button:hover {color: var(--cui2)}
-.notification__display-name:hover {color:var(--curl);}
+.column-header__back-button,
+.status__relative-time {
+	color: var(--cbut)
+}
+.column-header .column-header__back-button {
+	color: var(--cbut)
+}
+.account__header>div {
+	background: rgba(235,230,232,.6) !important
+}
+.account__header .account__header__display-name {
+	color: var(--btt2);
+	text-shadow: 0 0 0.4em #000
+}
+.account__header .account__header__username {
+	color: var(--cbut);
+	text-shadow: 1px 1px 0.5px #fff
+}
+.account__header .account__header__content {
+	color: var(--ctxt);
+	text-shadow: 1px 1px 0.5px #fff;
+}
+.account__action-bar{
+	border-top: 1px solid var(--cui);
+	border-bottom: 1px solid var(--cui);
+}
+.account__action-bar__tab{
+	border-left: 1px solid var(--cui);
+}
+.account__action-bar__tab>span,
+.notification__message>span,
+.notification__message .fa,
+.status__prepend,
+.icon-button.active {
+	color: var(--cui)
+}
+.account__action-bar__tab strong {
+	color: var(--cbut)
+}
+.muted .status__content a,
+.muted .status__content p,
+.muted .status__display-name strong,
+.attachment-list.compact .fa {
+	color: var(--cui2)
+}
+.attachment-list__list a {
+	color: var(--cbut)
+}
+.column-header__button:hover {
+	color: var(--cui2)
+}
+.notification__display-name:hover {
+	color:var(--curl);
+}
 
 /*跨站提示*/
-.account__disclaimer {border-top: 1px solid var(--cui); color: var(--ctxt);}
+.account__disclaimer {
+	border-top: 1px solid var(--cui);
+	color: var(--ctxt);
+}
 
 /*个人主页自定义标签*/
-.account__header__fields  {border-top: 1px solid var(--cui)}
-.account__header .account__header__fields dl {border-top: 1px solid var(--cui)}
-.account__header .account__header__fields dt {color: var(--btt2); background: var(--blb);text-shadow: 0 0 0.4em var(--btxt)}
-.account__header .account__header__fields dd  {color: var(--ctxt); background: var(--btt2);border-left: 1px solid var(--cui)}
-.account__header__fields dl {border-bottom:  1px solid var(--cui)}
+.account__header__fields {
+	border-top: 1px solid var(--cui)
+}
+.account__header .account__header__fields dl {
+	border-top: 1px solid var(--cui)
+}
+.account__header .account__header__fields dt {
+	color: var(--btt2);
+	background: var(--blb);
+	text-shadow: 0 0 0.4em var(--btxt)
+}
+.account__header .account__header__fields dd {
+	color: var(--ctxt);
+	background: var(--btt2);
+	border-left: 1px solid var(--cui)
+}
+.account__header__fields dl {
+	border-bottom: 1px solid var(--cui)
+}
 
 /*设置菜单*/
-.react-toggle-track {background-color: var(--btt3);}
-.react-toggle-thumb{border: 1px solid var(--btt3);}
-.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {background-color: var(--blb)}
-.react-toggle--checked .react-toggle-track {background-color: var(--cbut);}
-.react-toggle--checked .react-toggle-thumb {border-color: var(--cbut);}
-.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {background-color: var(--curl)}
-.column-settings__section, .setting-meta__label, .setting-toggle__label {color: var(--cui2)}
-.setting-text {color: var(--cui);border-bottom: 2px solid var(--btxt);}
-.setting-text:active,.setting-text:focus {color:var(--cui2); border-bottom-color:var(--cbut);}
+.react-toggle-track {
+	background-color: var(--btt3);
+}
+.react-toggle-thumb {
+	border: 1px solid var(--btt3);
+}
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+	background-color: var(--blb)
+}
+.react-toggle--checked .react-toggle-track {
+	background-color: var(--cbut);
+}
+.react-toggle--checked .react-toggle-thumb {
+	border-color: var(--cbut);
+}
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+	background-color: var(--curl)
+}
+.column-settings__section,
+.setting-meta__label,
+.setting-toggle__label {
+	color: var(--cui2)
+}
+.setting-text {
+	color: var(--cui);
+	border-bottom: 2px solid var(--btxt);
+}
+.setting-text:active,
+.setting-text:focus {
+	color:var(--cui2);
+	border-bottom-color:var(--cbut);
+}
 
 /*折叠菜单*/
-.dropdown-menu, .dropdown-menu__item a{background: var(--btxt); color: var(--btt2);}
-.dropdown-menu__arrow.top {border-top-color: var(--btxt)}
-.dropdown-menu__arrow.bottom {border-bottom-color: var(--btxt)}
-.dropdown-menu__separator {border-bottom: 1px solid var(--cui);}
-.dropdown-menu__item a:active,.dropdown-menu__item a:focus,.dropdown-menu__item a:hover {background: var(--cui2); color: var(--btt2);}
+.dropdown-menu,
+.dropdown-menu__item a{
+	background: var(--btxt);
+	color: var(--btt2);
+}
+.dropdown-menu__arrow.top {
+	border-top-color: var(--btxt);
+}
+.dropdown-menu__arrow.bottom {
+	border-bottom-color: var(--btxt);
+}
+.dropdown-menu__separator {
+	border-bottom: 1px solid var(--cui);
+}
+.dropdown-menu__item a:active,
+.dropdown-menu__item a:focus,.dropdown-menu__item a:hover {
+	background: var(--cui2);
+	color: var(--btt2);
+}
 
 /*开始使用*/
-.column-link__badge, .column-subheading, .getting-started,.getting-started__wrapper {background: var(--blb);}
-.getting-started {border-radius:0 0 10px 10px}
-.column-subheading, .getting-started a {color: var(--cui2)}
-.column-link {background: var(--btt); color: var(--ctxt);}
-.column-link:hover {background: var(--btt3)}
-.getting-started p {color: var(--btt2)}
+.column-link__badge,
+.column-subheading,
+.getting-started,
+.getting-started__wrapper {
+	background: var(--blb);
+}
+.getting-started {
+	border-radius:0 0 10px 10px
+}
+.column-subheading,
+.getting-started a {
+	color: var(--cui2);
+}
+.column-link {
+	background: var(--btt);
+	color: var(--ctxt);
+}
+.column-link:hover {
+	background: var(--btt3);
+	}
+.getting-started p {
+	color: var(--btt2);
+}
 
 /*搜索结果*/
-.search-results__header {color: var(--cbut); background: var(--bhd);}
-.search-results__section h5 {color: var(--ctxt); background: var(--blb);box-shadow: 0 8px 20px -8px var(--cui) inset; border-bottom: 1px solid var(--cui);}
-.account {border-bottom: 1px solid var(--cui)}
-.drawer__inner.darker {background: var(--btt3)}
-.trends__header {color: var(--cbut); background: var(--bhd);border-bottom: 1px solid var(--cui);box-shadow: 0 8px 20px -8px var(--cui);}
-.trends__item {border-bottom: 1px solid var(--cui);}
-.trends__item__name {color: var(--btxt)}
-.trends__item__name a {color: var(--cui)}
-.trends__item__current {color: var(--cbut)}
-.trends__item__sparkline path {stroke: var(--cbut) !important;}
+.search-results__header {
+	color: var(--cbut);
+	background: var(--bhd);
+}
+.search-results__section h5 {
+	color: var(--ctxt);
+	background: var(--blb);
+	box-shadow: 0 8px 20px -8px var(--cui)inset;
+	border-bottom: 1px solid var(--cui);
+	border-top: 1px solid var(--cui)
+}
+.search-results__section .account:last-child,
+.search-results__section>div:last-child .status {
+	box-shadow: 0 5px 20px -8px var(--btt);
+}
+.account {
+	border-bottom: 1px solid var(--cui)
+}
+.drawer__inner.darker {
+	background: var(--btt3)
+}
+.trends__header {
+	color: var(--cbut);
+	background: var(--bhd);
+	border-bottom: 1px solid var(--cui);
+	box-shadow: 0 8px 20px -8px var(--cui);
+}
+.trends__item {
+	border-bottom: 1px solid var(--cui);
+}
+.trends__item__name {
+	color: var(--btxt);
+}
+.trends__item__name a {
+	color: var(--cui);
+}
+.trends__item__current {
+	color: var(--cbut);
+}
+.trends__item__sparkline path {
+	stroke: var(--cbut) !important;
+}
 
 /*收藏按钮*/
 .icon-button:active .fa-star,
 .icon-button:focus .fa-star,
-.icon-button:hover .fa-star,
 .star-icon.active,
 .notification__favourite-icon-wrapper .star-icon
-{color: var(--cbut)}
+{color: var(--curl);
+	text-shadow: 0 0 10px var(--btt)
+}
 
 /*转发按钮，请把调色盘里的颜色转成16位替换到fill后面的引号中，然后把 '#' 替换为 '%23' */
+/*url后面的括号里不能换行！*/
 button.icon-button i.fa-retweet {
- background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='209'><path d='M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23e1827d' stroke-width='0'/><path d='M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23ff7d75' stroke-width='0'/></svg>")
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='209'><path d='M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23e1827d' stroke-width='0'  fill-opacity='0.6'/><path d='M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23ff7d75' stroke-width='0'/></svg>")
 }
 button.icon-button i.fa-retweet:hover {
  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='209'><path d='M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23ff5050' stroke-width='0'/><path d='M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z' fill='%23ff5050' stroke-width='0'/></svg>")
@@ -222,17 +589,39 @@ button.icon-button.disabled i.fa-retweet {
 }
 
 /*链接卡*/
-.status-card {background: var(--btt);border: 1px solid var(--cui); border-radius: 10px; color: var(--cui);}
-.status-card__content:hover {background: var(--btt2);}
-.status-card__title {color: var(--curl)}
-.status-card__description {color: var(--ctxt)}
+.status-card {
+	background: var(--btt);
+	border: 1px solid var(--cui);
+	border-radius: 10px; color: var(--cui);
+}
+.status-card__content:hover {
+	background: var(--btt2);
+}
+.status-card__title {
+	color: var(--curl);
+}
+.status-card__description {
+	color: var(--ctxt);
+}
 
-/*草莓象图片渐变*/
-.drawer__inner__mastodon>img {display:none;}
-.drawer__inner__mastodon {background: linear-gradient(to bottom, rgba(170, 48, 41,1), rgba(170, 48, 41,0), rgba(170, 48, 41,0)),url(/strawberry/elephant.png) no-repeat bottom/100% auto;}
+/*草莓象图片*/
+.drawer__inner__mastodon>img {
+	display:none;
+}
+.drawer__inner__mastodon {
+	background: linear-gradient(
+		to bottom,
+		rgba(170, 48, 41,1),
+		rgba(170, 48, 41,0),
+		rgba(170, 48, 41,0)
+		),
+	url(http://cmx.im/strawberry/elephant.png) no-repeat bottom/100% auto;
+}
 
 /*加载动画*/
-.loading-indicator { color: var(--btt2)}
+.loading-indicator {
+	color: var(--btt2)
+}
 .loading-indicator__figure {
 	position:absolute;
 	top:50%;
@@ -248,49 +637,3 @@ button.icon-button.disabled i.fa-retweet {
 	-webkit-animation:loader-figure 1.15s infinite cubic-bezier(.215,.61,.355,1);
 	animation:loader-figure 1.15s infinite cubic-bezier(.215,.61,.355,1)
 }
-/*@-webkit-keyframes loader-figure {
-	0% {
-		background-color:#f7fcf7
-	}
-	29% {
-		background-color:#f7fcf7
-	}
-	30% {
-		width:42px;
-		height:42px;
-		background-color:transparent;
-		border-width:21px;
-		opacity:1
-	}
-	to {
-		width:42px;
-		height:42px;
-		border-width:0;
-		opacity:0;
-		background-color:transparent
-	}
-}
-@keyframes loader-figure {
-	0% {
-		width:0;
-		height:0;
-		background-color:#f7fcf7
-	}
-	29% {
-		background-color:#f7fcf7
-	}
-	30% {
-		width:42px;
-		height:42px;
-		background-color:transparent;
-		border-width:21px;
-		opacity:1
-	}
-	to {
-		width:42px;
-		height:42px;
-		border-width:0;
-		opacity:0;
-		background-color:transparent
-	}
-}*/
