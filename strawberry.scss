@@ -43,9 +43,6 @@
 }
 
 /*全局文字按钮*/
-body {
-	color: var(--ctxt)
-}
 .icon-button {
 	color: rgba(225,130,125,.6);
 	text-shadow: 1px 1px 1px var(--btt);
@@ -388,7 +385,7 @@ body {
 	border-bottom: 1px solid var(--cui);
 }
 .account__action-bar__tab{
-	border-left: 1px solid var(--cui);
+	border-color: var(--cui);
 }
 .account__action-bar__tab>span,
 .notification__message>span,
@@ -636,4 +633,32 @@ button.icon-button.disabled i.fa-retweet {
 	border-radius:50%;
 	-webkit-animation:loader-figure 1.15s infinite cubic-bezier(.215,.61,.355,1);
 	animation:loader-figure 1.15s infinite cubic-bezier(.215,.61,.355,1)
+}
+
+/*mastodon 2.5*/
+.reply-indicator__content p,
+.status__content p {
+    color: var(--ctxt)
+}
+.status__action-bar__counter__label {
+    color:var(--cui)
+}
+.status-card__image-image {
+    background-color:var(--btt);
+    display:none;
+}
+.account__header__fields a,
+.getting-started__footer p a {
+    color: var(--curl)
+}
+.keyboard-shortcuts kbd {
+	color: var(--curl);
+	background-color:transparent;
+	border-color: var(--cui);
+	border-radius:5px;
+	margin: auto 2px;
+}
+.scrollable.optionally-scrollable span,
+.scrollable.optionally-scrollable td {
+	color: var(--ctxt)
 }
