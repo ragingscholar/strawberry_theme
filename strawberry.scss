@@ -57,7 +57,8 @@
 
 /*导航栏*/
 .drawer__header {
-	background: var(--bhd);border-radius:10px;
+	background: var(--bhd);
+	border-radius:10px;
 }
 .drawer__header a:hover {
 	background: var(--blb);
@@ -191,7 +192,7 @@
 	color: var(--btt2);
 	text-shadow: 0 0 0.6em var(--btxt);
 }
-.column-header,.column-back-button {
+.column-header {
 	box-shadow: 0 8px 20px -8px var(--cui);
 }
 .column-header__collapsible-inner,
@@ -229,7 +230,7 @@
 .account__display-name strong,
 .status__display-name strong,
 .detailed-status__display-name strong {
-	color: var(--btxt);
+	color: var(--btxt) !important;
 	text-shadow: 0 0 0.2em var(--btt2)
 }
 .status__content a,
@@ -568,7 +569,7 @@
 .icon-button:active .fa-star,
 .icon-button:focus .fa-star,
 .star-icon.active,
-.notification__favourite-icon-wrapper .star-icon
+.notification__favourite-icon-wrapper .star-icon 
 {color: var(--curl);
 	text-shadow: 0 0 10px var(--btt)
 }
@@ -636,8 +637,8 @@ button.icon-button.disabled i.fa-retweet {
 }
 
 /*mastodon 2.5*/
-.reply-indicator__content p,
-.status__content p {
+.reply-indicator__content,
+.status__content {
     color: var(--ctxt)
 }
 .status__action-bar__counter__label {
@@ -661,4 +662,523 @@ button.icon-button.disabled i.fa-retweet {
 .scrollable.optionally-scrollable span,
 .scrollable.optionally-scrollable td {
 	color: var(--ctxt)
+}
+.status-card__actions,
+.status-card__image {
+	display: none;
+}
+
+/*长图补丁*/
+.image-loader {
+	align-items:center;
+}
+.zoomable-image {
+	display: flex;
+	max-height: 100%;
+	max-width: 85%;
+	overflow: auto !important;
+	text-align:center;
+	align-items:center;
+}
+.zoomable-image:hover {
+	height:auto;
+	width: auto;
+	align-items: flex-start;
+}
+
+.zoomable-image img {
+	display:block !important;
+	max-width: 100%;
+	max-height: 80%;
+}
+.zoomable-image img:hover {
+	display:block !important;
+	max-height: 500%;
+	max-width: 100%;
+}
+
+/*外链个人主页地址*/
+@media screen and (max-width: 600px){
+.public-layout .public-account-header__bar{
+	background: transparent;
+}
+}
+html,
+body {
+	background: var(--bpg)
+}
+
+.public-layout .header {
+	background: var(--bhd);
+	border-radius:10px;
+}
+.public-layout .header .brand {
+	transition: all 0.1s linear;
+}
+.public-layout .header .brand:hover {
+	background: var(--blb);
+	border-radius:0 10px 10px 0;
+}
+.public-layout .header .nav-button {
+	background: var(--cui);
+	color: var(--btt2);
+	transition: all 0.1s linear;
+}
+.public-layout .header .nav-button:hover {
+	background: var(--curl);
+	color: var(--btt2);
+}
+
+.public-layout .public-account-header {
+	border-radius: 10px;
+	background-color: transparent;
+	background: var(--btt);
+}
+.public-layout .public-account-header__bar .avatar img {
+	border-color: var(--cbut);
+	background:transparent;
+	box-shadow: 0 0 15px rgba(0,0,0,.2);
+}
+.public-layout .public-account-header__tabs__tabs .counter {
+	color: var(--cui);
+	border-color: var(--cui);
+}
+.public-layout .public-account-header__tabs__tabs .counter .counter-number {
+	color: var(--curl);
+}
+.public-layout .public-account-header__tabs__tabs .counter.active:after {
+	border-color: var(--cbut);
+}
+.public-layout .public-account-header__tabs__tabs .counter:after {
+	border-color: var(--cui);
+}
+.button.logo-button {
+	background: var(--cbut);
+}
+.button.logo-button:active,
+.button.logo-button:focus,
+.button.logo-button:hover {
+	background: var(--curl);
+}
+
+.public-layout .account__section-headline {
+	border-radius: 10px 10px 0 0;
+}
+.activity-stream .entry {
+	background: var(--btt);
+}
+.activity-stream {
+	border-radius: 0 0 10px 10px;
+}
+
+.public-layout .public-account-bio {
+	background: var(--btt);
+	border-radius: 10px;
+}
+.account__header__fields dt {
+	background: var(--blb);
+	color: var(--btt2);
+	text-shadow: 0 0 0.4em var(--btxt);
+}
+.public-layout .public-account-bio .account__header__fields a {
+	color: var(--curl);
+	text-shadow: 0 0 0.4em var(--btt);
+}
+.account__header__fields dd {
+	color: var(--ctxt);
+	background: var(--btt2);
+}
+.public-layout .public-account-bio .account__header__fields {
+	border-color: var(--cui);
+}
+
+.public-layout .public-account-bio .account__header__content {
+	color: var(--ctxt)
+}
+.public-layout .public-account-bio .roles, .public-layout .public-account-bio__extra {
+	color: var(--cui);
+	text-shadow: 0 0 2px #fff;
+}
+
+
+.hero-widget {
+	border-radius: 10px
+}
+.hero-widget__img {
+	border-radius: 10px 10px 0 0;
+}
+.hero-widget__text {
+	background: var(--btt2);
+	color: var(--cui);
+	border-radius: 0 0 10px 10px
+}
+.hero-widget__text em {
+	color: var(--cui2)
+}
+.hero-widget__text a {
+	margin: 0px 2px;
+	padding: 1px 5px;
+	border-radius: 3px;
+	background: var(--cui);
+	color: var(--btt2);
+	transition: all 0.1s linear;
+}
+.hero-widget__text a:hover {
+	text-decoration:none;
+	background: var(--curl);
+}
+
+.public-layout .footer .brand:active svg path,
+.public-layout .footer .brand:focus svg path,
+.public-layout .footer .brand:hover svg path {
+	fill: var(--cbut);
+}
+.public-layout .footer .brand svg path {
+	fill: var(--btt);
+}
+.public-layout .footer ul a,
+.public-layout .footer {
+	color: var(--btt)
+}
+.public-layout .footer h4,
+.public-layout .footer .grid .column-2 h4 a {
+	color: var(--cbut);
+	text-shadow: 0 0 0.4em var(--btt2);
+}
+
+/*外链-mobile*/
+
+.public-layout .public-account-header__tabs__name h1 {
+	color: var(--ctxt);
+	text-shadow: 0 0 0.4em var(--btt2);
+}
+.public-layout .public-account-header__tabs__name h1 small {
+	color: var(--cui);
+	text-shadow: 1px 1px 1px var(--ctxt);
+}
+
+.public-layout .public-account-header__extra .public-account-bio .account__header__fields {
+	border-color: var(--cui);
+}
+
+.public-layout .public-account-header__extra__links a {
+	color: var(--cui);
+}
+.public-layout .public-account-header__extra__links a strong {
+	color: var(--cbut);
+	text-shadow: 0 0 0.2em var(--btt2);
+}
+
+/*外链-card*/
+
+.card>a {
+	border-radius: 10px
+}
+.card__img,
+.card__img img {
+	border-radius: 10px 10px 0 0;
+	background: var(--btt)
+}
+
+.card__bar {
+	border-radius: 0 0 10px 10px;
+	background: var(--blb);
+	box-shadow: 0 8px 15px -8px var(--cui) inset
+}
+.card > a .card__bar {
+	transition: all 0.15s linear;
+}
+.card > a:active .card__bar,
+.card > a:focus .card__bar,
+.card > a:hover .card__bar {
+	background: var(--btt2) !important;
+}
+.card__bar .display-name strong {
+	color: var(--ctxt);
+	text-shadow: 0 0 0.2em var(--btt2);
+}
+.card__bar .display-name span {
+	color: #fff
+}
+
+.card > a .display-name span {
+	transition: all 0.15s linear;
+}
+.card > a:active .display-name span,
+.card > a:focus .display-name span,
+.card > a:hover .display-name span{
+	color: var(--cui)
+}
+
+/*使用规约*/
+
+.box-widget,
+.contact-widget,
+.landing-page__information.contact-widget {
+	background: var(--btt);
+	border-radius: 10px;
+}
+.rich-formatting {
+	color: var(--ctxt);
+	padding:20px 15px;
+	text-align:justify;
+}
+.rich-formatting em {
+	color: var(--btxt);
+	border-radius: 5px;
+	padding: 2px 5px;
+	border: 2px dotted var(--cui);
+}
+.rich-formatting a,
+.contact-widget__mail a {
+	color: var(--curl);
+	text-decoration: none;
+
+}
+.rich-formatting a {
+	padding: 0px 5px
+}
+.rich-formatting a:hover,
+.contact-widget__mail a:hover {
+	text-decoration: underline;
+}
+.rich-formatting li,
+.rich-formatting p {
+	color: var(--cui);
+	margin-bottom: 6px;
+	font-style: italic;
+}
+.rich-formatting ol,
+.rich-formatting ul {
+	margin: 12px 20px
+}
+
+.landing-page__call-to-action {
+	background-color: var(--btxt);
+	background-image: url(http://cmx.im/strawberry/elephant.png);
+	background-position: 0% 84%;
+	background-repeat:no-repeat;
+	background-size:355px auto;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,.2);
+	box-shadow: 0 0 15px rgba(0,0,0,.2);
+}
+.landing-page__mascot img {
+	display: none;
+}
+.information-board__section strong {
+	color: var(--cbut);
+	text-shadow: -1px -1px 0.5px rgba(0,0,0,.5), 1px 1px 0.5px rgba(255,255,255,.5);
+}
+.information-board__section span:last-child {
+	color: var(--btt)
+}
+.contact-widget strong {
+	color: var(--cui)
+}
+
+.public-layout .public-account-header--no-bar .public-account-header__image,
+.public-layout .public-account-header--no-bar .public-account-header__image img {
+	border-radius: 10px
+}
+
+/*about*/
+.landing-page #mastodon-timeline .column,
+.landing-page #mastodon-timeline,
+.landing-page__forms,
+.landing-page__information,
+.landing-page__hero img {
+	border-radius: 10px;
+}
+.landing-page #mastodon-timeline p a,
+.simple_form p.hint.subtle-hint a {
+	color: var(--curl)
+}
+.landing-page #mastodon-timeline .column-header {
+	color: var(--cbut)
+}
+.landing-page #mastodon-timeline p {
+	color: var(--ctxt)
+}
+
+.landing-page__logo {
+	background: var(--cbut);
+	padding: 10px 10px 5px 10px;
+	border-radius: 50%
+}
+
+.landing-page__short-description h1,
+.landing-page__short-description p a,
+.landing-page h5, .landing-page h6,
+.landing-page h3, .landing-page h4,
+.landing-page .features-list .features-list__row .visual .fa {
+	color: var(--curl)
+}
+.landing-page__short-description h1 small,
+.landing-page li, .landing-page p,
+.landing-page .features-list .features-list__row .text {
+	color: var(--ctxt)
+}
+.landing-page em,
+.landing-page__short-description h1 small span {
+	color: var(--btxt)
+}
+.button.button-alternative {
+	background: var(--cbut);
+	color: var(--btt2);
+}
+
+.landing-page__information {
+	background: var(--btt3)
+}
+.landing-page__forms {
+	background: var(--btxt)
+}
+
+.simple_form input[type=email]:invalid,
+.simple_form input[type=number]:invalid,
+.simple_form input[type=password]:invalid,
+.simple_form input[type=text]:invalid,
+.simple_form textarea:invalid,
+.simple_form input[type=email],
+.simple_form input[type=number],
+.simple_form input[type=password],
+.simple_form input[type=text],
+.simple_form textarea,
+.simple_form input[type="email"]:active,
+.simple_form input[type="email"]:focus,
+.simple_form input[type="number"]:active,
+.simple_form input[type="number"]:focus,
+.simple_form input[type="password"]:active,
+.simple_form input[type="password"]:focus,
+.simple_form input[type="text"]:active,
+.simple_form input[type="text"]:focus,
+.simple_form textarea:active,
+.simple_form textarea:focus {
+	background: var(--btt);
+	border-radius: 5px;
+	color: var(--cui);
+}
+.simple_form input[type=email]:required:valid,
+.simple_form input[type=number]:required:valid,
+.simple_form input[type=password]:required:valid,
+.simple_form input[type=text]:required:valid,
+.simple_form textarea:required:valid {
+	border-color: var(--cbut)
+}
+.simple_form input[type=email],
+.simple_form input[type=number],
+.simple_form input[type=password],
+.simple_form input[type=text],
+.simple_form textarea {
+	border-color: var(--cui)
+}
+.simple_form .input-with-append .append {
+	color: var(--cui)
+}
+.simple_form .input-with-append .append:after {
+	background: transparent;
+}
+
+.simple_form .block-button,
+.simple_form .button,
+.simple_form button {
+	background: var(--cbut)
+}
+.simple_form .block-button:hover,
+.simple_form .button:hover,
+.simple_form button:hover {
+	background: var(--curl)
+}
+
+.button.button-alternative-2 {
+	background: var(--cui2)
+}
+.button.button-alternative-2:hover {
+	background: var(--cui)
+}
+.simple_form p.hint.subtle-hint {
+	color: var(--btt2)
+}
+.landing-page .separator-or span {
+	background: var(--blb);
+	color: var(--cbut);
+	border-radius: 5px
+}
+.landing-page .separator-or:before {
+	border-color: var(--cui)
+}
+.landing-page .simple_form p.hint.subtle-hint a {
+	color: var(--curl)
+}
+
+/*sign in*/
+body.lighter {
+	background: transparent;
+}
+.form-footer a {
+	color: var(--crul)
+}
+.simple_form p.hint.subtle-hint a {
+	color: var(--btxt)
+}
+
+/*2.1*/
+.account-role {
+	color: var(--cui);
+	background-color: rgba(255,255,255,.5);
+	border-color: var(--cui)
+}
+.account__moved-note {
+	background: var(--btt);
+	border:0;
+	border-bottom: 1px solid var(--cui)
+}
+.account__moved-note__message {
+	color: var(--cui)
+}
+.button.button-secondary {
+	color: var(--cui);
+	border-color: var(--cui)
+}
+.button.button-secondary:hover {
+	color: var(--curl);
+	border-color: var(--curl)
+}
+.landing-page #mastodon-timeline {
+	background: transparent;
+}
+
+@media screen and (max-width: 700px){
+	.landing-page.tag-page #mastodon-timeline .column {
+		height: 100%;
+	}
+}
+
+.column-inline-form {
+	background: var(--btt2)
+}
+.text-btn:hover {
+	color: var(--curl)
+}
+.column-header__collapsible hr {
+	border-top: 1px dotted var(--cui)
+}
+
+.list-editor {
+	background: transparent;
+	border-radius: 10px;
+}
+.list-editor h4 {
+	background: var(--bhd);
+	color:var(--cbut);
+}
+.list-editor .search__input {
+	background: var(--btt2);
+	border-radius: 0;
+	border-bottom: 1px solid var(--cui);
+	box-shadow: 0 8px 20px -8px var(--cui) inset;
+}
+.list-editor .drawer__inner {
+	background:var(--btt);
 }

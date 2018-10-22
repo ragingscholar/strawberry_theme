@@ -1,0 +1,1280 @@
+@import 'application';
+
+@-moz-document domain("cmx.im"), domain("mastodon.social"), domain("mstdn.io"), domain("octodon.social") {
+/* Made by Kpmitarai @kpm from cmx.im */
+/* Version 1.0.5 */
+/* Based on Purple Haze for Mastodon */
+/* Sogo Osaka love */
+
+
+/* -------Mobile------- */
+.tabs-bar {
+    background: #F7EFFF;
+	border-radius: 4px
+}
+.tabs-bar__link:active,
+.tabs-bar__link:focus,
+.tabs-bar__link:hover {
+	 background: #EFDFFF
+}
+.tabs-bar__link {
+    color: #966DAD;
+    border-bottom: 2px solid rgba(112, 84, 128, .5);
+    transition: all 50ms linear;
+}
+.tabs-bar__link.active {
+    border-bottom: 2px solid rgba(112, 84, 128, .8);
+    color: #705480;
+	 background: none;
+	text-shadow: 0 0 1px #694E78; 
+}
+.trends__header {
+    color: #705480;
+    background: #F0E3FD;
+    border-bottom: 1px solid #1f232b;
+    font-weight: 500;
+    padding: 15px;
+    font-size: 16px;
+    cursor: default;
+}
+.floating-action-button {
+    background: #DFC9F2;
+    color: #705480;
+    border-radius: 50%;
+    font-size: 21px;
+    line-height: 21px;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 3px 9px rgba(0,0,0,.4);
+    box-shadow: 2px 3px 9px rgba(0,0,0,.4);
+}
+.notification__message .fa {
+    color: #705480;
+}
+
+.public-layout .public-account-header__extra__links a {
+	color: #705480;
+}
+.public-layout .public-account-header__extra__links a strong {
+	color: #AE8CD1;
+}
+.public-layout .public-account-header__tabs__name h1 {
+	position: relative;
+	z-index: 2;
+	color: #705480;
+	text-shadow: none;
+}
+.public-layout .public-account-header__tabs__name h1 small {
+	color: #AE8CD1;
+}
+.public-layout .public-account-header__bar{
+	background: #FCF8FF;
+}
+.public-layout .public-account-header__bar:before {
+	background: #FCF8FF !important;
+	position: relative;
+}
+.public-layout .public-account-header__image:after {
+	z-index: 0;
+}
+.actions-modal ul li:not(:empty) a,
+.actions-modal ul li:not(:empty) a button {
+	background: #FCF8FF;
+	color: #705480;
+}
+/* ----------Getting Started---------- */
+.ui {
+	background: #eaeaeaf7
+}
+.column-header,
+.column-back-button,
+.column-header__button,
+.column-header__collapsible-inner {
+	border-radius: 4px 4px 0 0 !important;
+}
+.column-header,
+.column-header__button,
+.column-header__button:active {
+	color: #705480 !important;
+	background: #DFC9F2 !important;
+	box-shadow: 0 2px rgba(0, 0, 0, .1)
+}
+.column-header__button:hover {
+	color: #F7EFFF !important;
+}
+.column-header__button.active:hover {
+	color: #9C77C2;
+	background: #DFC9F2 !important;
+}
+.column-header__collapsible-inner {
+	background: #F7EFFF;
+	padding: 15px;
+}
+.column-header__wrapper .body {
+	color: #705480
+}
+
+
+/* ----上方工具欄---- */
+.drawer__tab {
+	background-color: #F7EFFF;
+	color: #966DAD;
+	border-bottom: 2px solid transparent;
+}
+.drawer__tab:first-child {
+	border-radius: 4px 0 0 4px
+}
+.drawer__tab:last-child {
+	border-radius: 0 4px 4px 0
+}
+.drawer__header a:hover {
+	background: #EFDFFF;
+}
+.drawer__header {
+	background: none !important;
+}
+.navigation-bar a {
+	color: #AE8CD1;
+}
+.navigation-bar strong {
+	color: #705480;
+}
+.navigation-bar {
+	background-color: #FBF6FF;
+	border-radius: 4px 4px 0 0;
+}
+.search input {
+	color: #694E78 !important;
+	background-color: #DFC9F2 !important;
+	border-radius: 4px;
+}
+.search__icon  fa-search.active {
+	color: #694E78
+}
+.search-results__header {
+	color: #694E78 !important;
+	background: #FBF6FF !important;
+}
+.search-results__section h5 {
+	color: #705480 !important;
+	background-color: #F0E3FD !important;
+	border-bottom: 1px solid rgba(112, 84, 128, .8) !important;
+	box-shadow: inset 0px 4px 15px -7px #AE8CD1;
+}
+
+
+/* --- .search-results__section --- */
+.account,
+.trends__item {
+	background-color: #FBF6FF !important;
+	padding: 10px;
+	border-bottom: 1px solid rgba(112, 84, 128, .5)
+}
+.trends__item__name a,
+.trends__item__current {
+	color: #AE8CD1 !important
+}
+.trends__item__sparkline path {
+	stroke: #AE8CD1 !important
+}
+.search-results__section .account:last-child,
+.search-results__section>div:last-child .status {
+	border-bottom: 0
+}
+.drawer__inner.darker {
+	background-color: #FBF6FF
+}
+
+/* ---隱私下拉菜單--- */
+.privacy-dropdown__option__content {
+	color: #705480 !important;
+}
+.privacy-dropdown__option.active,
+.privacy-dropdown__option:hover {
+	background: #F7EFFF !important;
+	color: #694E78 !important;
+}
+.privacy-dropdown__option__content strong {
+	color: #282c37 !important
+}
+.icon-button,
+.icon-button.inverted {
+	color: #AE8CD1 !important;
+}
+.icon-button:hover,
+.icon-button.inverted:hover .icon-button.inverted.active {
+	color: #694E78 !important;
+}
+.text-icon-button {
+	color: #AE8CD1 !important
+}
+.text-icon-button:hover,
+.text-icon-button.active {
+	color: #694E78 !important;
+	transition: color .2s ease-out !important;
+}
+.compose-form__publish-button-wrapper .fa-lock:before {
+	color: #fff;
+}
+.compose-form {
+	background-color: #FBF6FF
+}
+.compose-form__warning {
+	color: #694E78 !important;
+	background: #F7EFFF !important;
+	padding: 8px 10px !important;
+	border-radius: 4px !important;
+	font-size: 13px !important;
+	font-weight: 400 !important;
+}
+.compose-form .compose-form__warning a {
+	color: #606984;
+	font-weight: 500;
+	text-decoration: underline;
+}
+.compose-form,
+.compose-form__buttons-wrapper {
+	padding: 10px !important;
+	background: #F7EFFF !important;
+}
+.compose-form .compose-form__buttons-wrapper .character-counter__wrapper .character-counter {
+	cursor: default;
+	font-family: "mastodon-font-sans-serif", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #AE8CD1;
+}
+.compose-form .autosuggest-textarea__suggestions {
+    -webkit-box-shadow: 4px 4px 6px rgba(0,0,0,.4);
+    box-shadow: 4px 4px 6px rgba(0,0,0,.4);
+    background: #FBF6FF;
+    border-radius: 0 0 4px 4px;
+    color: #694E78;
+    font-size: 14px;
+	padding: 6px;
+}
+.compose-form .autosuggest-textarea__textarea,
+.compose-form .spoiler-input__input {
+    color: #694E78;
+    background: #fff;
+    padding-right: 32px;
+    font-family: inherit;
+    font-size: 14px;
+    resize: none;
+    border: 0;
+    outline: 0;
+}
+.reply-indicator,
+.compose-form .autosuggest-textarea__suggestions__item.selected,
+.compose-form .autosuggest-textarea__suggestions__item:active,
+.compose-form .autosuggest-textarea__suggestions__item:focus,
+.compose-form .autosuggest-textarea__suggestions__item:hover{
+    background: #F0E3FD;
+}
+.compose-form .compose-form__modifiers {
+	 border-radius: 0 0 4px 4px
+}
+.button.button--block {
+	transition: all .1s ease-in;
+}
+.privacy-dropdown.active,
+.privacy-dropdown__value.active {
+	background: transparent !important;
+}
+.compose-form__publish-button-wrapper .button {
+	background-color: #9C77C2
+}
+.compose-form__publish-button-wrapper .button:active,
+.compose-form__publish-button-wrapper .button:focus,
+.compose-form__publish-button-wrapper .button:hover {
+	background-color: #AE8CD1
+}
+.drawer__inner__mastodon {
+	background-color: #FBF6FF;
+	border-radius: 0 0 4px 4px
+}
+
+/* ----表情欄---- */
+.emoji-mart-bar:first-child {
+	border-bottom-width: 1px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #F0E3FD;
+}
+.emoji-mart-anchors {
+    padding: 0 6px;
+    color: #606984;
+	line-height: 0;
+}
+.emoji-mart-anchor-selected,
+.emoji-mart-anchor-selected:hover {
+	color: #9c77c2;
+}
+.emoji-mart-anchor-bar{
+	background-color: #9c77c2;
+}
+
+
+/* ============= 主頁欄 ============= */
+
+/* --消息欄背景色-- */
+.item-list {
+	background-color: #FCF8FF
+}
+
+/* --時間軸信息-- */
+.status__content--with-action {
+	color: #30163E
+}
+.status {
+	border-bottom: 1px solid rgba(112, 84, 128, .5) !important;
+}
+
+/* --ID顔色-- */
+.account__display-name strong,
+.status__display-name strong {
+	color: #705480;
+}
+.status__display-name {
+	color: #606984;
+}
+.status__relative-time {
+	color: #606984;
+	float: right;
+	font-size: 14px;
+}
+.reply-indicator__content a, .status__content a{
+	color: #AB7FD0;
+}
+
+/* --主頁下拉菜單-- */
+.setting-meta__label,
+.setting-toggle__label {
+	color: #705480;
+}
+.react-toggle--checked .react-toggle-track {
+	background-color: #AE8CD1;
+}
+.react-toggle--checked .react-toggle-thumb {
+	left: 27px;
+	border-color: #AE8CD1;
+}
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+	background-color: #D8BEF2 !important;
+	transition: all .2s ease !important;
+}
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+	background-color: #AE8CD1
+}
+.react-toggle-track {
+	border-radius: 30px;
+	background-color: #694E78;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.react-toggle-thumb {
+    border: 1px solid #694E78;
+    border-radius: 50%;
+    background-color: #fafafa;
+    transition: all .25s ease;
+}
+.text-btn,
+.column-settings__section,
+.column-header__setting-arrows {
+	color: #AE8CD1
+}
+.text-btn:hover {
+	color: #705480
+}
+.dropdown-menu {
+	background: #F7EFFF !important
+}
+.dropdown-menu__item a {
+	background: #F7EFFF;
+	color: #705480;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.dropdown-menu__item a:active,
+.dropdown-menu__item a:focus,
+.dropdown-menu__item a:hover {
+	background: #AE8CD1;
+	color: #FFF
+}
+.dropdown-menu__separator {
+	border-bottom: 1px solid rgba(112, 84, 128, .5);
+	height: 0;
+}
+.confirmation-modal__container,
+.mute-modal__container,
+.report-modal__target {
+	background: #FBF6FF;
+	color: #705480;
+	padding: 30px;
+}
+.boost-modal__action-bar,
+.confirmation-modal__action-bar,
+.error-modal__footer,
+.mute-modal__action-bar,
+.onboarding-modal__paginator {
+	background: #F0E3FD;
+}
+
+/* --返回菜單-- */
+.column-back-button,
+.column-header__back-button {
+	background: #DFC9F2;
+	color: #705480;
+}
+.column-header.column-header__back-button,
+.column-header>.column-header__back-button,
+.column-header.active .column-header__icon {
+	color: #705480;
+}
+.status__action-bar-button icon-button disabled {
+	color: #AE8CD1;
+}
+.reply-indicator__content .status__content__spoiler-link,
+.status__content .status__content__spoiler-link {
+	color: rgba(255, 255, 255, 0.9);
+	background: #9C77C2
+}
+.reply-indicator__content .status__content__spoiler-link:hover,
+.status__content .status__content__spoiler-link:hover {
+	background: #AE8CD1;
+	text-decoration: none
+}
+.account__moved-note {
+    background: #FBF6FF;
+    border-top: 1px solid rgba(112, 84, 128, .5);
+    border-bottom: 1px solid rgba(112, 84, 128, .5);
+}
+
+
+/* ============= 通知欄 ============= */
+.status__action-bar-button icon-button disabled .fa fa-fw fa-lock {
+	color: #AE8CD1 !important
+}
+.status__action-bar-button .star-icon,
+.star-icon.active,
+.notification__display-name:hover,
+.notification__favourite-icon-wrapper .star-icon{
+	color: #705480 !important;
+}
+.notification__message {
+	color: #9BAEC8;
+	font-size: 15px;
+	position: relative;
+}
+.column>.scrollable {
+	background: #F7EFFF !important;
+	border: none;
+	border-radius: 0 0 4px 4px;
+}
+.muted .status__content a,
+.muted .status__content p,
+.muted .status__display-name strong {
+	color: #606984;
+}
+
+
+/* ============= 公共時間軸 ============= */
+.community-timeline__section-headline {
+	background-color: #F7EFFF
+}
+.media-spoiler {
+	background: #F0E3FD;
+	color: #694E78;
+	border-radius: 4px;
+	-webkit-appearance: none;
+}
+.media-spoiler:hover {
+	color: #AE8CD1 !important
+}
+.account__section-headline a.active,
+.community-timeline__section-headline a.active,
+.public-timeline__section-headline a.active {
+	color: #694E78;
+	text-shadow: 0 0 0 3px #AE8CD1
+}
+.account__section-headline a,
+.community-timeline__section-headline a,
+.public-timeline__section-headline a {
+	color: #AE8CD1;
+}
+.account__section-headline,
+.community-timeline__section-headline,
+.public-timeline__section-headline {
+	background: transparent;
+	border-bottom: 1px solid rgba(112, 84, 128, .8);
+	cursor: default;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.account__section-headline a.active:after,
+.community-timeline__section-headline a.active:after,
+.public-timeline__section-headline a.active:after {
+	bottom: -1px;
+	border-color: transparent transparent #AE8CD1;
+}
+
+
+/* ============= 最右欄 ============= */
+.account__header>div {
+	background: rgba(217, 204, 238, 0.3)
+}
+.account__header .account__header__content,
+.account__header .account__header__display-name {
+	color: #fff;
+}
+.account__header .account__header__fields dt {
+	color: #fff;
+	background: rgba(148, 136, 168, 0.45);
+}
+.account__header .account__header__fields dd {
+	color: #fff;
+	background: rgba(116, 109, 122, 0.4);
+}
+.account__header .account__header__username {
+	color: rgba(255, 255, 255, 0.86);
+}
+.account__action-bar__tab>span {
+	display: block;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #705480;
+}
+.account__action-bar__tab strong {
+	display: block;
+	font-size: 15px;
+	color: #AE8CD1;
+}
+.account__action-bar__tab strong:lang(ja),
+.account__action-bar__tab strong:lang(ko),
+.account__action-bar__tab strong:lang(zh-CN),
+.account__action-bar__tab strong:lang(zh-HK),
+.account__action-bar__tab strong:lang(zh-TW) {
+	font-weight: 500;
+}
+.boost-modal__action-bar,
+.confirmation-modal__action-bar,
+.mute-modal__action-bar {
+	background-color: #F0E3FD
+}
+.button:hover {
+	background: #AE80C1 !important
+}
+.button {
+	background: #9C77C2 !important
+}
+.button.confirmation-modal__cancel-button {
+    color: #705480;
+    background: none !important
+}
+.button.confirmation-modal__cancel-button:hover {
+    color: #AE80C1;
+	background: none !important
+}
+.confirmation-modal__container,
+.mute-modal__container,
+.report-modal__target {
+	color: #705480;
+}
+.detailed-status {
+	background: #F7EFFF;
+	padding: 14px 10px;
+}
+.detailed-status__display-name span, .detailed-status__display-name strong {
+    color: #606984;
+    display: block;
+}
+.focusable:focus,
+.focusable:active {
+	background: #F7EFFF !important;
+}
+.detailed-status__display-name strong {
+	color: #705480;
+}
+.detailed-status .status__content {
+	font-size: 19px;
+	line-height: 24px;
+	color: #30163E;
+}
+.detailed-status__action-bar {
+	background: #F7EFFF;
+	border-top: 1px solid rgba(112, 84, 128, .5);
+	border-bottom: 1px solid rgba(112, 84, 128, .5);
+}
+.column-subheading {
+	color: #694E78;
+	box-shadow: inset 0px 4px 15px -7px #AE8CD1;
+}
+.column-link__badge,
+.column-subheading {
+	background: #F0E3FD;
+}
+.column-link {
+	background: #FBF6FF;
+	color: #AE8CD1;
+}
+.column-link:active,
+.column-link:hover,
+.column-link:focus {
+	color:#694E78;
+}
+.column-link:active,
+.column-link:hover,
+.column-link:focus,
+.static-content getting-started {
+	background: #F7EFFF
+}
+
+.column-link__badge,
+.column-subheading,
+.getting-started {
+	background: #F0E3FD;
+	border-radius: 0 0 4px 4px
+}
+.getting-started__wrapper {
+	background: #F0E3FD;
+	border-radius: none
+}
+.static-content,
+.getting-started p {
+	color: #694E78
+}
+
+.getting-started a {
+	color: #AE8CD1
+}
+.column-inline-form {
+	background: #F7EFFF;
+}
+.setting-text {
+	color: #AE8CD1;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid rgba(112, 84, 128, .5);
+}
+.account__action-bar {
+	background: #FBF6FF;
+	border-top: 1px solid rgba(112, 84, 128, .5);
+	border-bottom: 1px solid rgba(112, 84, 128, .5);
+}
+.account__action-bar__tab {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 80px;
+	flex: 0 1 80px;
+	border-left: none;
+	padding: 10px 5px;
+}
+.community-timeline__section-headline,
+.public-timeline__section-headline {
+	background: #FBF6FF;
+	border-bottom: 1px solid rgba(112, 84, 128, .8);
+}
+.account__section-headline {
+	background: #F7EFFF;
+	border-bottom: 1px solid rgba(112, 84, 128, .5);
+}
+.status__action-bar__counter__label {
+    color: #AB7FD0;
+}
+.account__action-bar__tab {
+	border-right: none;
+}
+.getting-started__footer a,
+.getting-started__footer p a {
+    color: #AE8CD1;
+}
+
+
+/* ============= 管理頁面 ============= */
+.admin-wrapper .sidebar-wrapper {
+	background: #eaeaeaf7;
+}
+.admin-wrapper {
+	background: #FCF8FF;
+}
+.admin-wrapper .sidebar ul ul {
+   background: transparent
+}
+.admin-wrapper .sidebar ul a.selected {
+	background: #FCF8FF;
+	border: 0;
+	border-radius: 4px 0 0 4px ;
+}
+.admin-wrapper .sidebar ul a {
+	background: #FCF8FF;
+	display: block;
+	padding: 15px;
+	color: #AE8CD1;
+	text-decoration: none;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+	border: 0;
+	border-radius: 4px 0 0 4px ;
+}
+.admin-wrapper .sidebar ul a:hover {
+	color: #694E78;
+	background-color: #F7EFFF;
+	-webkit-transition: all .1s linear;
+	transition: all .1s linear;
+	border-radius: 4px 0 0 4px !important;
+}
+
+.admin-wrapper .sidebar ul ul a.selected,
+.admin-wrapper .sidebar ul ul a.selected:hover {
+	background: #AE8CD1;
+}
+.admin-wrapper .content h2 {
+	color: #705480;
+}
+.admin-wrapper .content>p {
+	color: #AE8CD1;
+}
+.admin-wrapper .content>p strong {
+	color: #705480;
+}
+.simple_form input[type=email],
+.simple_form input[type=number],
+.simple_form input[type=password],
+.simple_form input[type=text],
+.simple_form textarea {
+	background: transparent;
+	border-bottom: 2px solid rgba(112, 84, 128, .5);
+	border-radius: 2px 2px 0 0;
+	padding: 7px 4px;
+	font-size: 16px;
+	color: #705480;
+}
+.simple_form span.hint {
+	color: #AE8CD1;
+}
+.simple_form .input.with_block_label>label,
+.simple_form .input.with_label .label_input>label,
+.simple_form .input.with_label.boolean .label_input>label {
+	color: #705480;
+}
+.simple_form .block-button,
+.simple_form .button,
+.simple_form button {
+	border-radius: 4px;
+	background: #9C77C2 !important;
+	color: #fff;
+}
+.simple_form .block-button:hover,
+.simple_form .button:hover,
+.simple_form button:hover {
+	background: #AE8CD1 !important
+}
+.table>tbody>tr:nth-child(odd)>td,
+.table>tbody>tr:nth-child(odd)>th {
+	background: #DFC9F2;
+}
+.admin-wrapper .content h4 {
+	color: #705480;
+	border-bottom: 1px solid #393f4f;
+}
+.admin-wrapper .content h6,
+.admin-wrapper .content .muted-hint a {
+	color: #705480;
+}
+.admin-wrapper .content .muted-hint {
+	color: #AE8CD1;
+}
+select {
+	color: #694E78;
+	background-color: white;
+	border-width: 1px;
+}
+.simple_form p.hint {
+	color: #AE8CD1;
+}
+.simple_form .check_boxes .checkbox label {
+	color: #705480;
+}
+.simple_form .input.radio_buttons .radio label {
+	color: #705480;
+	width: auto;
+}
+.flash-message {
+	background: #AE8CD1;
+	color: #fff;
+	border-radius: 4px;
+	padding: 15px 10px;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	text-align: center;
+}
+body.admin {
+	background: #FBF6FF;
+}
+body {
+	color: #30163E;
+	text-rendering: optimizelegibility;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.table>thead {
+	border-top: none
+}
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+	border-top: 0
+}
+.table>thead>tr>th {
+	vertical-align: bottom;
+	border-bottom: 2px solid rgba(112, 84, 128, .8);
+}
+.table>thead>tr>td {
+	border-top: 0
+}
+.table td,
+.table th {
+	border-top: 1px solid rgba(112, 84, 128, .5);
+	text-align: left;
+	background: #F0E3FD;
+}
+a.table-action-link,
+button.table-action-link {
+	margin-right: 5px;
+	padding: 0 10px;
+	color: #AE8CD1;
+}
+.table a {
+	color: #705480;
+}
+.button:hover {
+	background-color: #AE8CD1 !important
+}
+											
+
+/* ============= About頁面 ============= */
+.public-layout .header .brand:active, .public-layout .header .brand:focus, .public-layout .header .brand:hover {
+	background: #9C77C2;
+}
+.nothing-here {
+	background: #FCF8FF;
+	color: #705480;
+}
+.public-layout .public-account-header__bar:before {
+	background: none !important;
+	border-radius: 0 0 4px 4px !important;
+}
+
+.public-layout .header .nav-button {
+	background: #FBF6FF;
+}
+.public-layout .header .nav-button:active, .public-layout .header .nav-button:focus, .public-layout .header .nav-button:hover {
+    text-decoration: none;
+    background: #F7EFFF;
+}
+.public-layout .header .nav-link {
+	color: #705480;
+}
+.public-layout .header {
+	background: #AE8CD1;
+}
+.public-layout .public-account-header__bar .avatar img {
+    border-radius: 50%;
+	border: none;
+    background: transparent;
+}
+.public-layout .public-account-header__bar .avatar {
+    display: block;
+    width: 125px;
+	height: 125px;
+	padding-left: auto;
+	z-index: 2;
+}
+.public-layout .public-account-header__tabs__tabs {
+    height: 55px;
+}
+.public-layout .public-account-header__image {
+    border-radius: 4px 4px 0 0;
+    height: auto;
+    background: none;
+	z-index: 1;
+}
+
+.public-layout .public-account-header__tabs__tabs .counter.active:after {
+	border-bottom: 4px solid #9C77C2;
+}
+.public-layout .public-account-header__tabs__tabs .counter {
+    color: #705480;
+    border-right: 1px solid #AE8CD1;
+}
+.public-layout .public-account-header__tabs__tabs .counter:after {
+	border-bottom: 4px solid #AE8CD1;
+}
+.public-layout .public-account-header__tabs__tabs .counter .counter-number {
+    margin-bottom: 5px;
+	color: #AE8CD1;
+}
+body {
+    background: #eaeaeaf7 !important;
+}
+
+.hero-widget__text {
+    background: #FCF8FF;
+    border-radius: 0 0 4px 4px;
+	color: #705480;
+}
+.public-layout .public-account-bio {
+	background: #FCF8FF !important;
+}
+.public-layout .public-account-bio .account__header__content {
+    color: #705480;
+}
+.public-layout .public-account-bio .roles, .public-layout .public-account-bio__extra {
+    color: #AE8CD1;
+}
+.hero-widget__text em,
+.hero-widget__text a {
+	 color: #AE8CD1;
+}
+.activity-stream .entry {
+    background: #FCF8FF;
+}
+.reply-indicator__content, .status__content {
+	color: #705480;
+}
+.public-layout .public-account-bio .account__header__fields a {
+    color: #AE8CD1;
+}
+.account__header .account__header__fields dl {
+	border-top: 1px solid rgba(112, 84, 128, .5);
+	border-bottom: none;
+}
+.account__header__fields dl {
+	border-bottom: 1px solid rgba(112, 84, 128, .5);
+}
+.public-layout .footer,
+.public-layout .footer h4,
+.public-layout .footer ul a,
+.public-layout .footer .grid .column-2 h4 a{
+	color: #AE8CD1 !important;
+}
+.public-layout .footer .brand svg path{
+	fill: #AE8CD1 !important;
+}
+.activity-stream {
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.2);
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    border-radius: 0 0 4px 4px;
+}
+
+.public-layout .account__section-headline {
+	box-shadow: 0 0 15px rgba(0,0,0,.2);
+}
+
+
+.simple_form input[type=email]:active,
+.simple_form input[type=email]:focus,
+.simple_form input[type=number]:active,
+.simple_form input[type=number]:focus,
+.simple_form input[type=password]:active,
+.simple_form input[type=password]:focus,
+.simple_form input[type=text]:active,
+.simple_form input[type=text]:focus,
+.simple_form textarea:active,
+.simple_form textarea:focus {
+	border-bottom-color: transparent;
+}
+
+
+
+/* ----------滾動條---------- */
+::-webkit-scrollbar-thumb {
+	background: #694E78 !important;
+	border: 0 none #fff;
+	border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover,
+-webkit-scrollbar-thumb:active {
+	background: #7c5b8e !important;
+	border: none;
+}
+::-webkit-scrollbar-track,
+-webkit-scrollbar-track:hover{
+	background: #f1e1f9 !important;
+	border-radius: 0 0 4px 0;
+	border: none;
+}
+.column,
+.drawer{
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding: 10px;
+    padding-left: 5px;
+	padding-right: 5px !important;
+}
+
+/* ============= 其他部分 ============= */
+
+.empty-column-indicator,
+.error-column {
+    color: #AE8CD1 !important;
+    background: #FCF8FF !important;
+}
+.status.status-direct {
+    background: #FCF8FF;
+}
+.regeneration-indicator {
+    color: #AE8CD1 !important;
+    background: #FCF8FF !important
+}
+.regeneration-indicator strong {
+	color: #AE8CD1 !important;
+}
+.keyboard-shortcuts kbd {
+    background-color: #F0E3FD;
+    border: 1px solid #FFFAFA;
+}
+.loading-bar {
+    background-color: #FCF8FF;
+    height: 3px;
+    position: absolute;
+}
+.drawer__inner__mastodon {
+    background: #FBF6FF url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.80078 31.757813" width="234.80078" height="31.757812"><path d="M19.599609 0c-1.05 0-2.10039.375-2.90039 1.125L0 16.925781v14.832031h234.80078V17.025391l-16.5-15.900391c-1.6-1.5-4.20078-1.5-5.80078 0l-13.80078 13.099609c-1.6 1.5-4.19883 1.5-5.79883 0L179.09961 1.125c-1.6-1.5-4.19883-1.5-5.79883 0L159.5 14.224609c-1.6 1.5-4.20078 1.5-5.80078 0L139.90039 1.125c-1.6-1.5-4.20078-1.5-5.80078 0l-13.79883 13.099609c-1.6 1.5-4.20078 1.5-5.80078 0L100.69922 1.125c-1.600001-1.5-4.198829-1.5-5.798829 0l-13.59961 13.099609c-1.6 1.5-4.200781 1.5-5.800781 0L61.699219 1.125c-1.6-1.5-4.198828-1.5-5.798828 0L42.099609 14.224609c-1.6 1.5-4.198828 1.5-5.798828 0L22.5 1.125C21.7.375 20.649609 0 19.599609 0z" fill="#F7EFFF"/></svg>') no-repeat bottom/100% auto
+}
+
+button.icon-button i.fa-retweet {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="209"><path d="M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="#AE8CD1" stroke-width="0"/><path d="M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="#705480" stroke-width="0"/></svg>')
+}
+
+button.icon-button i.fa-retweet:hover,
+button.icon-button i.fa-retweet:focus,
+button.icon-button i.fa-retweet:active {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="209"><path d="M4.97 3.16c-.1.03-.17.1-.22.18L.8 8.24c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77L5.5 3.35c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.02-2.4.02H7.1l2.32 2.85.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="#705480" stroke-width="0"/><path d="M7.78 19.66c-.24.02-.44.25-.44.5v2.46h-.06c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v4.47c0 4.26-.56 3.62 3.65 3.62H8.5l-1.3-1.06c-.1-.08-.18-.2-.2-.3-.02-.17.06-.35.2-.45l1.33-1.1H7.28c-.44 0-.72-.3-.72-.7v-4.48c0-.44.28-.72.72-.72h.06v2.5c0 .38.54.63.82.38l4.9-3.93c.25-.18.25-.6 0-.78l-4.9-3.92c-.1-.1-.24-.14-.38-.12zm9.34 2.93c-.54-.02-1.3.02-2.4.02h-1.25l1.3 1.07c.1.07.18.2.2.33.02.16-.06.3-.2.4l-1.33 1.1h1.28c.42 0 .72.28.72.72v4.47c0 .42-.3.72-.72.72h-.1v-2.47c0-.3-.3-.53-.6-.47-.07 0-.14.05-.2.1l-4.9 3.93c-.26.18-.26.6 0 .78l4.9 3.92c.27.25.82 0 .8-.38v-2.5h.1c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.15.4-3.62-1.25-3.66zM10.34 38.66c-.24.02-.44.25-.43.5v2.47H7.3c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.47c0 3.66-.23 3.7 2.34 3.66l-1.34-1.1c-.1-.08-.18-.2-.2-.3 0-.17.07-.35.2-.45l1.96-1.6c-.03-.06-.04-.13-.04-.2v-4.48c0-.44.28-.72.72-.72H9.9v2.5c0 .36.5.6.8.38l4.93-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.08-.23-.13-.36-.12zm5.63 2.93l1.34 1.1c.1.07.18.2.2.33.02.16-.03.3-.16.4l-1.96 1.6c.02.07.06.13.06.22v4.47c0 .42-.3.72-.72.72h-2.66v-2.47c0-.3-.3-.53-.6-.47-.06.02-.12.05-.18.1l-4.94 3.93c-.24.18-.24.6 0 .78l4.94 3.92c.28.22.78-.02.78-.38v-2.5h2.66c4.27 0 3.65.67 3.65-3.62v-4.47c0-3.66.34-3.7-2.4-3.66zM13.06 57.66c-.23.03-.4.26-.4.5v2.47H7.28c-1.08 0-1.86-.04-2.4-.04-1.64 0-1.25.43-1.25 3.65v4.87l2.93-2.37v-2.5c0-.44.28-.72.72-.72h5.38v2.5c0 .36.5.6.78.38l4.94-3.93c.24-.18.24-.6 0-.78l-4.94-3.92c-.1-.1-.24-.14-.38-.12zm5.3 6.15l-2.92 2.4v2.52c0 .42-.3.72-.72.72h-5.4v-2.47c0-.3-.32-.53-.6-.47-.07.02-.13.05-.2.1L3.6 70.52c-.25.18-.25.6 0 .78l4.93 3.92c.28.22.78-.02.78-.38v-2.5h5.42c4.27 0 3.65.67 3.65-3.62v-4.47-.44zM19.25 78.8c-.1.03-.2.1-.28.17l-.9.9c-.44-.3-1.36-.25-3.35-.25H7.28c-1.08 0-1.86-.03-2.4-.03-1.64 0-1.25.43-1.25 3.65v.7l2.93.3v-1c0-.44.28-.72.72-.72h7.44c.2 0 .37.08.5.2l-1.8 1.8c-.25.26-.08.76.27.8l6.27.7c.28.03.56-.25.53-.53l-.7-6.25c0-.27-.3-.48-.55-.44zm-17.2 6.1c-.2.07-.36.3-.33.54l.7 6.25c.02.36.58.55.83.27l.8-.8c.02 0 .04-.02.04 0 .46.24 1.37.17 3.18.17h7.44c4.27 0 3.65.67 3.65-3.62v-.75l-2.93-.3v1.05c0 .42-.3.72-.72.72H7.28c-.15 0-.3-.03-.4-.1L8.8 86.4c.3-.24.1-.8-.27-.84l-6.28-.65h-.2zM4.88 98.6c-1.33 0-1.34.48-1.3 2.3l1.14-1.37c.08-.1.22-.17.34-.2.16 0 .34.08.44.2l1.66 2.03c.04 0 .07-.03.12-.03h7.44c.34 0 .57.2.65.5h-2.43c-.34.05-.53.52-.3.78l3.92 4.95c.18.24.6.24.78 0l3.94-4.94c.22-.27-.02-.76-.37-.77H18.4c.02-3.9.6-3.4-3.66-3.4H7.28c-1.08 0-1.86-.04-2.4-.04zm.15 2.46c-.1.03-.2.1-.28.2l-3.94 4.9c-.2.28.03.77.4.78H3.6c-.02 3.94-.45 3.4 3.66 3.4h7.44c3.65 0 3.74.3 3.7-2.25l-1.1 1.34c-.1.1-.2.17-.32.2-.16 0-.34-.08-.44-.2l-1.65-2.03c-.06.02-.1.04-.18.04H7.28c-.35 0-.57-.2-.66-.5h2.44c.37 0 .63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.23-.47-.2zM4.88 117.6c-1.16 0-1.3.3-1.3 1.56l1.14-1.38c.08-.1.22-.14.34-.16.16 0 .34.04.44.16l2.22 2.75h7c.42 0 .72.28.72.72v.53h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-.53c0-4.2.72-3.63-3.66-3.63H7.28c-1.08 0-1.86-.03-2.4-.03zm.1 1.74c-.1.03-.17.1-.23.16L.8 124.44c-.2.28.03.77.4.78H3.6v.5c0 4.26-.55 3.62 3.66 3.62h7.44c1.03 0 1.74.02 2.28 0-.16.02-.34-.03-.44-.15l-2.22-2.76H7.28c-.44 0-.72-.3-.72-.72v-.5h2.5c.37.02.63-.5.4-.78L5.5 119.5c-.12-.15-.34-.22-.53-.16zm12.02 10c1.2-.02 1.4-.25 1.4-1.53l-1.1 1.36c-.07.1-.17.17-.3.18zM5.94 136.6l2.37 2.93h6.42c.42 0 .72.28.72.72v1.25h-2.6c-.3.1-.43.54-.2.78l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.25c0-4.2.72-3.63-3.66-3.63H7.28c-.6 0-.92-.02-1.34-.03zm-1.72.06c-.4.08-.54.3-.6.75l.6-.74zm.84.93c-.12 0-.24.08-.3.18l-3.95 4.9c-.24.3 0 .83.4.82H3.6v1.22c0 4.26-.55 3.62 3.66 3.62h7.44c.63 0 .97.02 1.4.03l-2.37-2.93H7.28c-.44 0-.72-.3-.72-.72v-1.22h2.5c.4.04.67-.53.4-.8l-3.96-4.92c-.1-.13-.27-.2-.44-.2zm13.28 10.03l-.56.7c.36-.07.5-.3.56-.7zM17.13 155.6c-.55-.02-1.32.03-2.4.03h-8.2l2.38 2.9h5.82c.42 0 .72.28.72.72v1.97H12.9c-.32.06-.48.52-.28.78l3.94 4.94c.2.23.6.22.78-.03l3.94-4.9c.22-.28-.02-.77-.37-.78H18.4v-1.97c0-3.15.4-3.62-1.25-3.66zm-12.1.28c-.1.02-.2.1-.28.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v1.96c0 4.26-.55 3.62 3.66 3.62h8.24l-2.36-2.9H7.28c-.44 0-.72-.3-.72-.72v-1.97h2.5c.37.02.63-.5.4-.78l-3.96-4.9c-.1-.15-.3-.22-.47-.2zM5.13 174.5c-.15 0-.3.07-.38.2L.8 179.6c-.24.27 0 .82.4.8H3.6v2.32c0 4.26-.55 3.62 3.66 3.62h7.94l-2.35-2.9h-5.6c-.43 0-.7-.3-.7-.72v-2.3h2.5c.38.03.66-.54.4-.83l-3.97-4.9c-.1-.13-.23-.2-.38-.2zm12 .1c-.55-.02-1.32.03-2.4.03H6.83l2.35 2.9h5.52c.42 0 .72.28.72.72v2.34h-2.6c-.3.1-.43.53-.2.78l3.92 4.9c.18.24.6.24.78 0l3.94-4.9c.22-.3-.02-.78-.37-.8H18.4v-2.33c0-3.15.4-3.62-1.25-3.66zM4.97 193.16c-.1.03-.17.1-.22.18l-3.94 4.9c-.2.3.03.78.4.8H3.6v2.68c0 4.26-.55 3.62 3.66 3.62h7.66l-2.3-2.84c-.03-.02-.03-.04-.05-.06H7.27c-.44 0-.72-.3-.72-.72v-2.7h2.5c.37.03.63-.48.4-.77l-3.96-4.9c-.12-.17-.34-.25-.53-.2zm12.16.43c-.55-.02-1.32.03-2.4.03H7.1l2.32 2.84.03.06h5.25c.42 0 .72.28.72.72v2.7h-2.5c-.36.02-.56.54-.3.8l3.92 4.9c.18.25.6.25.78 0l3.94-4.9c.26-.28 0-.83-.37-.8H18.4v-2.7c0-3.15.4-3.62-1.25-3.66z" fill="#705480" stroke-width="0"/></svg>')
+}
+.drawer__inner {
+    background: transparent;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.drawer__pager {
+	border-radius: 4px
+}
+.load-more {
+    display: block;
+    color: #AE8CD1;
+    background-color: transparent;
+    width: 100%;
+}
+.load-more:hover,
+.load-more:focus,
+.load-more:active {
+	 background-color: #F7EFFF;
+}
+.load-gap {
+    border-bottom: none;
+}
+.container-alt {
+    background: transparent;
+}
+body {
+	background-color: #F7EFFF;
+}
+.drawer__pager {
+	border-radius: 4px
+}
+.card:after {
+    background: rgba(217, 204, 238, 0.3);
+    display: block;
+}
+.card .name {
+    color: #694E78;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+.card .name small {
+    color: #705480;
+}
+.card__bar {
+	background: #9C77C2;
+}
+.card__bar .display-name span {
+    font-size: 14px;
+	color: #694E78;
+}
+.card>a:active .card__bar, .card>a:focus .card__bar, .card>a:hover .card__bar {
+    background: #AE8CD1;
+}
+.card__bar .display-name strong {
+    font-size: 15px;
+	color: #EFDFFF;
+}
+
+.account__header__content {
+    color: #606984
+}
+.account__header__fields {
+    margin: 15px -15px -15px;
+    border-top: 1px solid rgba(112, 84, 128, .5);
+    border-bottom: 1px solid rgba(112, 84, 128, .5);
+}
+.account__header__fields dt {
+    color: #705480;
+    background: #F0E3FD;
+}
+.account__header__fields dd {
+    flex: 1 1 auto;
+    color: #705480;
+}
+.card .counter {
+    color: #606984;
+    border-right: 1px solid rgba(112, 84, 128, .5);
+}
+.card .counter .counter-number {
+    color: #AE8CD1;
+}
+.card .counter.active:after {
+    border-bottom: 4px solid #AE8CD1;
+    opacity: 1;
+}
+.card .counter:after {
+    border-bottom: 4px solid #AE8CD1;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.activity-stream-tabs a.active {
+    color: #694E78;
+}
+.activity-stream-tabs a {
+    color: #AE8CD1;
+}
+.activity-stream-tabs a:hover {
+	color: #694E78;
+}
+.activity-stream .status.light .display-name strong {
+    font-weight: 500;
+    color: #694E78;
+}
+.activity-stream .status.light .display-name span {
+    color: #606984;
+}
+.activity-stream .status.light .status__content {
+    color: #30163E;
+}
+.activity-stream-tabs {
+    background: #fff;
+    border-bottom: 1px solid rgba(112, 84, 128, .5);
+}
+.accounts-grid {
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.2);
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    background: transparent;
+    border-radius: 0 0 4px 4px;
+}
+.account--panel {
+    background: #F0E3FD;
+    border-top: none;
+    border-bottom: none;
+	box-shadow: inset 1px 1px 15px -8px #AE8CD1;
+}
+.status-card,
+.status-card:hover{
+	background: #F0E3FD !important;
+	border: none
+}
+.status-card:focus{
+	background: #FCF8FF !important;
+	border: none
+}
+.status-card__title {
+	color: #AE8CD1;
+}
+
+.focusable:focus .detailed-status,
+.focusable:focus .detailed-status__action-bar {
+	background:#FCF8FF !important
+}
+.account__header__fields a {
+	color: #FCF8FF;
+}
+.actions-modal,
+.boost-modal,
+.confirmation-modal,
+.embed-modal,
+.error-modal,
+.mute-modal,
+.onboarding-modal,
+.report-modal {
+	background: #FCF8FF;
+}
+.boost-modal__container {
+    padding: 10
+}
+.focusable:focus .status.status-direct,
+.focusable:active .status.status-direct,
+.focusable:focus .status.status-public.muted,
+.focusable:focus .notification.notification-reblog,
+.focusable:focus .notification.notification-favourite,
+.focusable:focus .status__wrapper.status__wrapper-public {
+	 background: #F7EFFF;
+}
+
+/* ----------terms---------- */
+.box-widget,
+.contact-widget,
+.landing-page__information.contact-widget {
+	background: #FCF8FF;
+}
+.rich-formatting,
+.rich-formatting em {
+	color: #705480;
+}
+.rich-formatting a,
+.rich-formatting li,
+.rich-formatting p{
+	color: #AE8CD1;
+}
+
+/* ----------more---------- */
+.landing-page__call-to-action {
+	background: #FCF8FF;
+}
+.information-board__section,
+.contact-widget__mail a {
+	color: #AE8CD1;
+}
+.information-board__section span:last-child,
+.contact-widget strong {
+	color: #705480;
+}
+.landing-page__information .account .display-name__account {
+	color: #606984;
+}
+
+
+/* ----------forward---------- */
+.boost-modal__container {
+	overflow-x: auto;
+    padding: 10px 0 0 0;
+}
+.status.light .display-name strong, .status.light .status__display-name {
+	color: #694E78;
+}
+.status.light .status__relative-time,
+.status.light .display-name span {
+	color: #606984;
+}
+.status.light .status__content {
+	color: #705480;
+}
+.status.light .status__content a {
+	color: #AE8CD1;
+}
+}
