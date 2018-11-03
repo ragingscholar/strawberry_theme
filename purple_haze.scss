@@ -1,7 +1,7 @@
 @import 'application';
 
 /* Made by Kpmitarai @kpm from cmx.im */
-/* Version 1.0.5 */
+/* Version 1.0.8 */
 /* Sogo Osaka love */
 
 
@@ -76,6 +76,17 @@
 .actions-modal ul li:not(:empty) a {
 	color: #705480;
 }
+.actions-modal ul li:not(:empty) a.active,
+.actions-modal ul li:not(:empty) a.active button,
+.actions-modal ul li:not(:empty) a:active,
+.actions-modal ul li:not(:empty) a:active button,
+.actions-modal ul li:not(:empty) a:focus,
+.actions-modal ul li:not(:empty) a:focus button,
+.actions-modal ul li:not(:empty) a:hover,
+.actions-modal ul li:not(:empty) a:hover button {
+	background: #F7EFFF;
+	color: #705480;
+}
 
 /* ----------Getting Started---------- */
 .ui {
@@ -126,7 +137,7 @@
 	background: #EFDFFF;
 }
 .drawer__header {
-	background: none !important
+	background: none !important;
 }
 .navigation-bar a {
 	color: #AE8CD1
@@ -167,10 +178,10 @@
 }
 .trends__item__name a,
 .trends__item__current {
-	color: #AE8CD1 !important
+	color: #AE8CD1 !important;
 }
 .trends__item__sparkline path {
-	stroke: #AE8CD1 !important
+	stroke: #AE8CD1 !important;
 }
 .search-results__section .account:last-child,
 .search-results__section>div:last-child .status {
@@ -190,7 +201,7 @@
 	color: #694E78 !important;
 }
 .privacy-dropdown__option__content strong {
-	color: #282c37 !important
+	color: #282c37 !important;
 }
 .icon-button,
 .icon-button.inverted {
@@ -201,7 +212,7 @@
 	color: #694E78 !important;
 }
 .text-icon-button {
-	color: #AE8CD1 !important
+	color: #AE8CD1 !important;
 }
 .text-icon-button:hover,
 .text-icon-button.active {
@@ -383,7 +394,7 @@
 	color: #705480
 }
 .dropdown-menu {
-	background: #F7EFFF !important
+	background: #F7EFFF !important;
 }
 .dropdown-menu__item a {
 	background: #F7EFFF;
@@ -416,6 +427,9 @@
 .mute-modal__action-bar,
 .onboarding-modal__paginator {
 	background: #F0E3FD;
+}
+.mute-modal__cancel-button {
+	color: #FFF !important;
 }
 
 /* --返回菜單-- */
@@ -450,7 +464,7 @@
 
 /* ============= 通知欄 ============= */
 .status__action-bar-button icon-button disabled .fa fa-fw fa-lock {
-	color: #AE8CD1 !important
+	color: #AE8CD1 !important;
 }
 .status__action-bar-button .star-icon,
 .star-icon.active,
@@ -480,7 +494,7 @@
 
 /* ============= 公共時間軸 ============= */
 .community-timeline__section-headline {
-	background-color: #F7EFFF
+	background-color: #F7EFFF;
 }
 .media-spoiler {
 	background: #F0E3FD;
@@ -489,7 +503,7 @@
 	-webkit-appearance: none;
 }
 .media-spoiler:hover {
-	color: #AE8CD1 !important
+	color: #AE8CD1 !important;
 }
 .account__section-headline a.active,
 .community-timeline__section-headline a.active,
@@ -509,6 +523,7 @@
 	bottom: -1px;
 	border-color: transparent transparent #AE8CD1;
 }
+
 /* ============= 最右欄 ============= */
 .account__header>div {
 	background: rgba(217, 204, 238, 0.3)
@@ -547,21 +562,21 @@
 .boost-modal__action-bar,
 .confirmation-modal__action-bar,
 .mute-modal__action-bar {
-	background-color: #F0E3FD
+	background-color: #F0E3FD;
 }
 .button:hover {
-	background: #AE80C1 !important
+	background: #AE80C1 !important;
 }
 .button {
-	background: #9C77C2 !important
+	background: #9C77C2 !important;
 }
 .button.confirmation-modal__cancel-button {
     color: #705480;
-    background: none !important
+    background: none !important;
 }
 .button.confirmation-modal__cancel-button:hover {
     color: #AE80C1;
-	background: none !important
+	background: none !important;
 }
 .confirmation-modal__container,
 .mute-modal__container,
@@ -976,13 +991,13 @@ body {
 
 /* ----------滾動條---------- */
 ::-webkit-scrollbar-thumb {
-	background: #9C77C2 !important;
+	background: #9C77C2;
 	border: 0 none #fff;
 	border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb:hover,
 -webkit-scrollbar-thumb:active {
-	background: #AE8CD1 !important;
+	background: #AE8CD1;
 	border: none;
 }
 ::-webkit-scrollbar-track,
@@ -991,14 +1006,6 @@ body {
 	border-radius: 0 0 4px 0;
 	border: none;
 }
-.column,
-.drawer{
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    padding: 10px;
-    padding-left: 5px;
-	padding-right: 5px !important;
-}
 
 /* ============= 其他部分 ============= */
 .empty-column-indicator,
@@ -1006,15 +1013,15 @@ body {
     color: #AE8CD1 !important;
     background: #FCF8FF !important;
 }
-.status.status-direct {
-    background: #FCF8FF;
-}
 .regeneration-indicator {
     color: #AE8CD1 !important;
     background: #FCF8FF !important
 }
 .regeneration-indicator strong {
 	color: #AE8CD1 !important;
+}
+.status.status-direct {
+    background: #FCF8FF;
 }
 .keyboard-shortcuts kbd {
     background-color: #F0E3FD;
@@ -1141,7 +1148,10 @@ button.icon-button i.fa-retweet:active {
     border-radius: 0 0 4px 4px;
 }
 .account--panel {
-    background: #F0E3FD ;
+    background: #F0E3FD;
+	box-shadow: inset 1px 1px 15px -8px #AE8CD1;
+	border-top: none;
+	border-bottom: none;
 }
 .status-card,
 .status-card:hover{
@@ -1157,7 +1167,7 @@ button.icon-button i.fa-retweet:active {
 }
 .focusable:focus .detailed-status,
 .focusable:focus .detailed-status__action-bar {
-	background:#FCF8FF !important
+	background:#FCF8FF !important;
 }
 .account__header__fields a {
 	color: #FCF8FF;
@@ -1233,4 +1243,47 @@ button.icon-button i.fa-retweet:active {
 }
 .status.light .status__content a {
 	color: #AE8CD1;
+}
+
+
+/* ----------2.5.0 追加主頁及其他零碎更新---------- */
+.video-player__spoiler {
+	background: #F0E3FD;
+	color: #694E78;
+}
+.video-player__spoiler:hover {
+	color: #AE8CD1 !important;
+}
+
+.button.button-alternative,
+.button.button-secondary {
+	color:#FFF !important;
+}
+.button.button-secondary {
+	border: 1px solid #9c77c2 !important;
+}
+.landing-page #mastodon-timeline p,
+.landing-page li,
+.landing-page p,
+.landing-page h3,
+.landing-page h4,
+.landing-page .features-list .features-list__row .text h6{
+	color:#694E78;
+}
+.landing-page #mastodon-timeline p a,
+.landing-page em,
+.landing-page .features-list .features-list__row .text {
+	color:#AE8CD1;
+	text-decoration: none;
+}
+.landing-page #mastodon-timeline,
+.landing-page__forms,
+.landing-page__information {
+	background: #fcf8ff;
+}
+.landing-page .features-list .features-list__row .visual .fa {
+	display: block;
+	color: #AE8CD1;
+	font-size:48px;
+}
 }

@@ -1,7 +1,7 @@
 @import 'application';
 
 /* Made by Kpmitarai @kpm from cmx.im */
-/* Version 1.0.5 */
+/* Version 1.0.8 */
 /* Based on Purple Haze for Mastodon */
 /* Sogo Osaka love */
 
@@ -77,7 +77,18 @@
 }
 .actions-modal ul li:not(:empty) a,
 .actions-modal ul li:not(:empty) a button {
-	background: #FCF8FF;
+	background:#FCF8FF;
+	color: #705480;
+}
+.actions-modal ul li:not(:empty) a.active,
+.actions-modal ul li:not(:empty) a.active button,
+.actions-modal ul li:not(:empty) a:active,
+.actions-modal ul li:not(:empty) a:active button,
+.actions-modal ul li:not(:empty) a:focus,
+.actions-modal ul li:not(:empty) a:focus button,
+.actions-modal ul li:not(:empty) a:hover,
+.actions-modal ul li:not(:empty) a:hover button {
+	background: #F7EFFF;
 	color: #705480;
 }
 /* ----------Getting Started---------- */
@@ -417,6 +428,9 @@
 .mute-modal__action-bar,
 .onboarding-modal__paginator {
 	background: #F0E3FD;
+}
+.mute-modal__cancel-button {
+	color: #FFF !important;
 }
 
 /* --返回菜單-- */
@@ -1007,14 +1021,6 @@ body {
 	border-radius: 0 0 4px 0;
 	border: none;
 }
-.column,
-.drawer{
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    padding: 10px;
-    padding-left: 5px;
-	padding-right: 5px !important;
-}
 
 /* ============= 其他部分 ============= */
 
@@ -1275,4 +1281,46 @@ body {
 }
 .status.light .status__content a {
 	color: #AE8CD1;
+}
+
+/* ----------2.5.0 追加主頁及其他零碎更新---------- */
+.video-player__spoiler {
+	background: #F0E3FD;
+	color: #694E78;
+}
+.video-player__spoiler:hover {
+	color: #AE8CD1 !important;
+}
+
+.button.button-alternative,
+.button.button-secondary {
+	color:#FFF !important;
+}
+.button.button-secondary {
+	border: 1px solid #9c77c2 !important;
+}
+.landing-page #mastodon-timeline p,
+.landing-page li,
+.landing-page p,
+.landing-page h3,
+.landing-page h4,
+.landing-page .features-list .features-list__row .text h6{
+	color:#694E78;
+}
+.landing-page #mastodon-timeline p a,
+.landing-page em,
+.landing-page .features-list .features-list__row .text {
+	color:#AE8CD1;
+	text-decoration: none;
+}
+.landing-page #mastodon-timeline,
+.landing-page__forms,
+.landing-page__information {
+	background: #fcf8ff;
+}
+.landing-page .features-list .features-list__row .visual .fa {
+	display: block;
+	color: #AE8CD1;
+	font-size:48px;
+}
 }
